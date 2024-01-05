@@ -1,0 +1,128 @@
+package com.example.cardetails.service;
+
+
+import java.util.List;
+import java.util.Optional;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
+
+import com.example.cardetails.controller.CarDetailController;
+import com.example.cardetails.entity.Car;
+import com.example.cardetails.repository.CarRepository;
+
+@Service
+public class CarServiceImpl implements CarService {
+	
+	CarRepository carRepository;
+	 private static final Logger logger = LoggerFactory.getLogger(CarServiceImpl.class);
+	
+	public CarServiceImpl(CarRepository carRepository) {
+		super();
+		this.carRepository = carRepository;
+	}
+
+//	@Override
+//	public String createCarDetails(Car car) {
+//		carRepository.save(car);
+//		return "Success";
+//	}
+
+	@Override
+	public String createCarDetails(Car car) {
+	    Long carId = car.getCarId();
+
+	    Optional<Car> existingCarOptional = carRepository.findById(carId);
+
+	    if (!existingCarOptional.isPresent()) { 
+	    	 carRepository.save(car);
+		        return "Created successfully";
+	        
+	    } else {
+	    	Car existingCar = existingCarOptional.get();
+	        return "Car details found: " + existingCar.toString();
+	    }
+	}
+
+//   @Override
+//	public String updateCarDetails(Long carId,Car car) {
+//		 Optional<Car> optionalCar = carRepository.findById(carId);
+//		 if (optionalCar.isPresent()) {
+//		    	logger.info("Updating car details.");
+//		    	carRepository.save(car);
+//		  return "Success";
+//	}else {
+//        throw new CarNotFoundException("Car not found with ID: " + carId);     
+//    }
+//}
+	@Override
+	public String updateCarDetails(Long carId, Car car) {
+	    Optional<Car> optionalCar = carRepository.findById(carId);
+	    if (optionalCar.isPresent()) {
+	        Car existingCar = optionalCar.get();
+	        existingCar.setCarname(car.getCarname());
+	        existingCar.setCartype(car.getCartype());
+	        existingCar.setCarmodel(car.getCarmodel());
+	        existingCar.setFueltype(car.getFueltype());
+	        // Update other fields as needed...
+
+	        logger.info("Updating car details.");
+	        carRepository.save(existingCar);
+	        return "Success";
+	    } else {
+	        throw new CarNotFoundException("Car not found with ID: " + carId);
+	    }
+	}
+
+
+	@Override
+	public String deleteCarDetails(Long carId) {
+		
+		 Optional<Car> optionalCar = carRepository.findById(carId);
+
+		    if (optionalCar.isPresent()) {
+		    	logger.info("Deleting car details.");
+		    	carRepository.deleteById(carId);
+				return "Success";
+		    } else {
+		        throw new CarNotFoundException("Car not found with ID: " + carId);     
+		    }
+		}
+
+
+
+	@Override
+	public Car getCarDetails(Long carId) {
+		
+	    Optional<Car> optionalCar = carRepository.findById(carId);
+ 
+	    if (optionalCar.isPresent()) {
+	    	logger.info("Retrieving car details.");
+	        return optionalCar.get();
+	    } else {
+	        throw new CarNotFoundException("Car not found with ID: " + carId);     
+	    }
+	}
+	
+	
+
+	@Override
+	public List<Car> getAllCarDetails() {
+		return carRepository.findAll();
+	}
+	
+	
+	@Override
+	public Car getCarDetailsByCarname(String carname) {
+	    return carRepository.findByCarname(carname)
+	            .orElseThrow(() -> new CarNotFoundException("Car not found with carname: " + carname));
+	}
+
+	
+
+}
+
+
+
+

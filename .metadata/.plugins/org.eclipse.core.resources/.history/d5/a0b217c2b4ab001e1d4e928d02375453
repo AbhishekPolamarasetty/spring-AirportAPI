@@ -1,0 +1,134 @@
+package com.example.cardetails.controller;
+
+import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+
+import com.example.cardetails.entity.Car;
+import com.example.cardetails.service.CarNotFoundException;
+import com.example.cardetails.service.CarService;
+
+
+@RestController
+@RequestMapping("/cardetails")
+public class CarDetailController {
+	
+	 CarService carService;
+	 private static final Logger logger = LoggerFactory.getLogger(CarDetailController.class);
+
+	
+	public CarDetailController(CarService carService) {
+		super();
+		this.carService = carService;
+	}
+
+
+	@GetMapping
+	public List<Car> getCarDetails(Long carId)
+	{   logger.info("Request received for retrieving all car details.");
+		return carService.getAllCarDetails();
+	}
+	
+	
+
+	@GetMapping("{carId}")
+	public Car getCarDetailsById(Long carId)
+	{   logger.info("Request received for retrieving {} car details.",carId);
+		return carService.getCarDetails(carId);
+	}
+	
+	
+	
+//    @GetMapping("{carId}")
+//    public ResponseEntity<?> getCarDetailsById(@PathVariable Long carId) {
+//        logger.info("Request received for retrieving car details by ID: {}", carId);
+//        try {
+//            Car carDetails = carService.getCarDetails(carId);
+//            logger.info("Found car details for ID {}: {}", carId, carDetails);
+//            return ResponseEntity.ok(carDetails);
+//        } catch (CarNotFoundException e) {
+//            logger.warn("No car details found for ID: {}", carId);
+//            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+//        }
+//    }
+	
+//	@PostMapping
+//	public String createCarDetails(@RequestBody Car car)
+//	{   carService.createCarDetails(car);
+//	    logger.info("Car details added: {}", car);
+//		return "Car Deatils Added";
+//	}
+	
+    @PostMapping 
+    public ResponseEntity<String> createCarDetails(@RequestBody Car car) {
+        String result = carService.createCarDetails(car);
+
+        if (result.startsWith("Car details found")) {
+            // Car with the same carId already exists
+            return ResponseEntity.status(HttpStatus.CONFLICT).body(result);
+        } else {
+            // New Car created successfully
+            return ResponseEntity.status(HttpStatus.CREATED).body(result);
+        }
+    }
+    
+	@PutMapping("{carId}")
+	public String updateCarDetails(@PathVariable Long carId,@RequestBody Car car) {
+	 try {
+	        logger.info("Request received for updating car details by carId: {}", carId);
+	        carService.updateCarDetails(carId,car);
+	      logger.info("Car details updated: {}", car);
+	      return "Car Details Updated";
+	}
+	 catch(CarNotFoundException e) {
+	        logger.warn("To delete no car details found with carname: {}", carId);
+	        return e.getMessage();
+	    }
+		}
+	
+	@DeleteMapping("{carId}")
+	public String deleteCarDetails(@PathVariable Long carId)
+	{    try {
+        logger.info("Request received for deleting car details by carId: {}", carId);
+        carService.deleteCarDetails(carId);
+	    logger.info("Car details deleted for ID: {}", carId);
+		return "Deleted Sucessfully";
+	}
+	catch(CarNotFoundException e) {
+        logger.warn("To delete no car details found with carname: {}", carId);
+        return e.getMessage();
+    }
+	}
+
+	
+	@GetMapping("/byCarname")
+	public ResponseEntity<?> getCarDetailsByCarname(@RequestParam String carname) {
+        logger.info("Request received for retrieving car details by CarName: {}", carname);
+        try {
+            Car carDetails = carService.getCarDetailsByCarname(carname);
+            logger.info("Found car details for CarName {}: {}", carname, carDetails);
+            return ResponseEntity.ok(carDetails);
+        } catch (CarNotFoundException e) {
+            logger.warn("No car details found for CarName: {}", carname);
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
+        }
+    }
+    
+	
+}
+
+
+
+

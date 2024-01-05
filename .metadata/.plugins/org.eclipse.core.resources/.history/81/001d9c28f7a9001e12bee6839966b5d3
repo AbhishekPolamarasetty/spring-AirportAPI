@@ -1,0 +1,31 @@
+package com.books.Service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.books.Entity.Books;
+import com.books.repository.BooksRepository;
+
+@Service
+public class BooksServiceImplementation implements BooksService {
+	BooksRepository booksRepository;
+	
+	public BooksServiceImplementation(BooksRepository booksRepository) {
+		this.booksRepository=booksRepository;
+	}
+	
+	public List<Books> getAllBooks(){
+		return booksRepository.findAll();
+	}
+	
+	public String createBook(Books books) {
+		booksRepository.save(books);
+		return "successful";
+	}
+	
+	public Books getBooksById(Integer BookId) {
+		return booksRepository.findById(BookId).get();
+		
+	}
+}
