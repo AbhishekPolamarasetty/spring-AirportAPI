@@ -3125,3 +3125,877 @@ java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceed
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) ~[.cp/:na]
 	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:na]
 
+2024-01-09T21:38:49.487+05:30  INFO 21872 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 21872 (C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI\target\classes started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T21:38:49.490+05:30  INFO 21872 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T21:38:49.543+05:30  INFO 21872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09T21:38:49.543+05:30  INFO 21872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09T21:38:50.378+05:30  INFO 21872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T21:38:50.430+05:30  INFO 21872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2024-01-09T21:38:51.081+05:30  INFO 21872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 11478 (http)
+2024-01-09T21:38:51.096+05:30  INFO 21872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-09T21:38:51.096+05:30  INFO 21872 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-09T21:38:51.153+05:30  INFO 21872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-09T21:38:51.153+05:30  INFO 21872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1609 ms
+2024-01-09T21:38:51.197+05:30  INFO 21872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-09T21:38:51.477+05:30  INFO 21872 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T21:38:51.485+05:30  INFO 21872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-09T21:38:51.501+05:30  INFO 21872 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-09T21:38:51.676+05:30  INFO 21872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T21:38:51.763+05:30  INFO 21872 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-09T21:38:51.815+05:30  INFO 21872 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T21:38:52.078+05:30  INFO 21872 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T21:38:52.140+05:30  WARN 21872 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T21:38:52.790+05:30  INFO 21872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T21:38:52.831+05:30  INFO 21872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T21:38:53.570+05:30  WARN 21872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-09T21:38:53.693+05:30  INFO 21872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-09T21:38:53.740+05:30  INFO 21872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11478 (http) with context path ''
+2024-01-09T21:38:53.750+05:30  INFO 21872 --- [restartedMain] com.Airport.AirportApiApplication        : Started AirportApiApplication in 4.661 seconds (process running for 5.222)
+2024-01-09T21:39:00.360+05:30  INFO 21872 --- [http-nio-11478-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09T21:39:00.361+05:30  INFO 21872 --- [http-nio-11478-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-09T21:39:00.362+05:30  INFO 21872 --- [http-nio-11478-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-09T21:39:00.365+05:30  INFO 21872 --- [http-nio-11478-exec-2] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-09T21:39:00.380+05:30  INFO 21872 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/api/v1/airports
+2024-01-09T21:39:00.389+05:30  INFO 21872 --- [http-nio-11478-exec-2] c.Airport.Controller.AirportController   : Fetching all airport details.
+2024-01-09T21:39:00.389+05:30  INFO 21872 --- [http-nio-11478-exec-2] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
+2024-01-09T21:39:00.563+05:30  INFO 21872 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/api/v1/airports
+2024-01-09T21:39:00.563+05:30  INFO 21872 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/api/v1/airports
+2024-01-09T21:39:16.527+05:30  INFO 21872 --- [http-nio-11478-exec-3] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-09T21:39:16.528+05:30  WARN 21872 --- [http-nio-11478-exec-3] o.s.web.servlet.PageNotFound             : No mapping for POST /api/v1/airport
+2024-01-09T21:39:16.530+05:30  WARN 21872 --- [http-nio-11478-exec-3] o.s.web.servlet.PageNotFound             : No endpoint POST /api/v1/airport.
+2024-01-09T21:39:16.539+05:30  INFO 21872 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. POST:/error
+2024-01-09T21:39:16.571+05:30  INFO 21872 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. POST:/error
+2024-01-09T21:39:16.572+05:30  INFO 21872 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. POST:/error
+2024-01-09T21:39:52.947+05:30  INFO 21872 --- [http-nio-11478-exec-4] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-09T21:39:52.949+05:30  INFO 21872 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. POST:/api/v1/airports
+2024-01-09T21:39:52.995+05:30  INFO 21872 --- [http-nio-11478-exec-4] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T21:39:53.235+05:30  INFO 21872 --- [http-nio-11478-exec-4] c.A.S.AirportServiceImplementation       : Creating airport...
+2024-01-09T21:39:53.281+05:30  INFO 21872 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. POST:/api/v1/airports
+2024-01-09T21:39:53.281+05:30  INFO 21872 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. POST:/api/v1/airports
+2024-01-09T21:40:02.202+05:30  INFO 21872 --- [http-nio-11478-exec-5] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-09T21:40:02.203+05:30  INFO 21872 --- [http-nio-11478-exec-5] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. POST:/api/v1/airports
+2024-01-09T21:40:02.205+05:30  INFO 21872 --- [http-nio-11478-exec-5] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T21:40:02.211+05:30 ERROR 21872 --- [http-nio-11478-exec-5] c.A.S.AirportServiceImplementation       : Airport is already Exists
+2024-01-09T21:40:02.215+05:30  INFO 21872 --- [http-nio-11478-exec-5] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. POST:/api/v1/airports
+2024-01-09T21:40:02.215+05:30  INFO 21872 --- [http-nio-11478-exec-5] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. POST:/api/v1/airports
+2024-01-09T21:41:23.515+05:30  INFO 21872 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-01-09T21:41:23.533+05:30  INFO 21872 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T21:41:23.537+05:30  INFO 21872 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-09T21:41:23.564+05:30  INFO 21872 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-09T21:41:23.642+05:30  INFO 21872 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 21872 (C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI\target\classes started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T21:41:23.643+05:30  INFO 21872 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T21:41:23.892+05:30  INFO 21872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T21:41:23.912+05:30  INFO 21872 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2024-01-09T21:41:24.006+05:30  INFO 21872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 11478 (http)
+2024-01-09T21:41:24.007+05:30  INFO 21872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-09T21:41:24.007+05:30  INFO 21872 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-09T21:41:24.027+05:30  INFO 21872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-09T21:41:24.027+05:30  INFO 21872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 382 ms
+2024-01-09T21:41:24.040+05:30  INFO 21872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-01-09T21:41:24.059+05:30  INFO 21872 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T21:41:24.060+05:30  INFO 21872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-01-09T21:41:24.060+05:30  INFO 21872 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-09T21:41:24.087+05:30  INFO 21872 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T21:41:24.090+05:30  INFO 21872 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T21:41:24.095+05:30  INFO 21872 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T21:41:24.096+05:30  WARN 21872 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T21:41:24.122+05:30  INFO 21872 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T21:41:24.124+05:30  INFO 21872 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T21:41:24.269+05:30  WARN 21872 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-09T21:41:24.299+05:30  INFO 21872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-09T21:41:24.311+05:30  INFO 21872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11478 (http) with context path ''
+2024-01-09T21:41:24.314+05:30  INFO 21872 --- [restartedMain] com.Airport.AirportApiApplication        : Started AirportApiApplication in 0.696 seconds (process running for 155.786)
+2024-01-09T21:41:24.317+05:30  INFO 21872 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-09T21:41:46.580+05:30  INFO 21872 --- [http-nio-11478-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09T21:41:46.580+05:30  INFO 21872 --- [http-nio-11478-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-09T21:41:46.581+05:30  INFO 21872 --- [http-nio-11478-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-09T21:41:46.581+05:30  INFO 21872 --- [http-nio-11478-exec-3] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-09T21:41:46.582+05:30  INFO 21872 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. POST:/api/v1/airports
+2024-01-09T21:41:46.584+05:30  INFO 21872 --- [http-nio-11478-exec-3] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T21:41:46.591+05:30  INFO 21872 --- [http-nio-11478-exec-3] c.A.S.AirportServiceImplementation       : Creating airport...
+2024-01-09T21:41:46.596+05:30  INFO 21872 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. POST:/api/v1/airports
+2024-01-09T21:41:46.596+05:30  INFO 21872 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. POST:/api/v1/airports
+2024-01-09T21:43:41.177+05:30  INFO 6484 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 6484 (started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T21:43:41.181+05:30  INFO 6484 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T21:43:42.177+05:30  INFO 6484 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T21:43:42.255+05:30  INFO 6484 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2024-01-09T21:43:42.815+05:30  INFO 6484 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T21:43:42.909+05:30  INFO 6484 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-09T21:43:42.974+05:30  INFO 6484 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T21:43:43.385+05:30  INFO 6484 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T21:43:43.444+05:30  INFO 6484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-09T21:43:43.936+05:30  INFO 6484 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T21:43:43.939+05:30  INFO 6484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-09T21:43:43.986+05:30  WARN 6484 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T21:43:44.272+05:30 ERROR 6484 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Error thrown while acquiring connection from data source
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database has been closed [90098-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.get(DbException.java:212) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.engine.SessionLocal.getTransaction(SessionLocal.java:1610) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.engine.SessionLocal.startStatementWithinTransaction(SessionLocal.java:1631) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Command.executeQuery(Command.java:186) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:588) ~[h2-2.2.224.jar:2.2.224]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:403) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:733) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-5.0.1.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: org.h2.mvstore.MVStoreException: java.lang.AssertionError: 20480 != 16384 [2.2.224/3]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.FileStore.storeBuffer(FileStore.java:1529) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.FileStore.lambda$serializeAndStore$3(FileStore.java:1432) ~[h2-2.2.224.jar:2.2.224]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	... 4 common frames omitted
+Caused by: java.lang.AssertionError: 20480 != 16384
+	at org.h2.mvstore.RandomAccessStore.shrinkStoreIfPossible(RandomAccessStore.java:679) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.RandomAccessStore.writeChunk(RandomAccessStore.java:377) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.RandomAccessStore.writeChunk(RandomAccessStore.java:28) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.FileStore.storeBuffer(FileStore.java:1524) ~[h2-2.2.224.jar:2.2.224]
+	... 6 common frames omitted
+
+2024-01-09T21:43:45.048+05:30  INFO 6484 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T21:43:45.108+05:30  WARN 6484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90098, SQLState: 90098
+2024-01-09T21:43:45.108+05:30 ERROR 6484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : The database has been closed [90098-224]
+2024-01-09T21:43:45.115+05:30 ERROR 6484 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to build DatabaseInformation [The database has been closed [90098-224]] [n/a]
+2024-01-09T21:43:45.115+05:30  WARN 6484 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to build DatabaseInformation [The database has been closed [90098-224]] [n/a]
+2024-01-09T21:43:45.116+05:30  INFO 6484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-09T21:43:45.324+05:30  INFO 6484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-09T21:43:45.333+05:30  INFO 6484 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-01-09T21:43:45.360+05:30 ERROR 6484 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to build DatabaseInformation [The database has been closed [90098-224]] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1773) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1232) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:950) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1458) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:552) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:376) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:288) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:277) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:na]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to build DatabaseInformation [The database has been closed [90098-224]] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.1.2.jar:6.1.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.2.jar:6.1.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1820) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1769) ~[spring-beans-6.1.2.jar:6.1.2]
+	... 93 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to build DatabaseInformation [The database has been closed [90098-224]] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:51) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:194) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:98) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.2.jar:6.1.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.2.jar:6.1.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.2.jar:6.1.2]
+	... 97 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database has been closed [90098-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.get(DbException.java:212) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.engine.SessionLocal.getTransaction(SessionLocal.java:1610) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.engine.SessionLocal.startStatementWithinTransaction(SessionLocal.java:1631) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Command.executeQuery(Command.java:186) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:131) ~[h2-2.2.224.jar:2.2.224]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:49) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	... 110 common frames omitted
+Caused by: org.h2.mvstore.MVStoreException: java.lang.AssertionError: 20480 != 16384 [2.2.224/3]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.FileStore.storeBuffer(FileStore.java:1529) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.FileStore.lambda$serializeAndStore$3(FileStore.java:1432) ~[h2-2.2.224.jar:2.2.224]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.lang.AssertionError: 20480 != 16384
+	at org.h2.mvstore.RandomAccessStore.shrinkStoreIfPossible(RandomAccessStore.java:679) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.RandomAccessStore.writeChunk(RandomAccessStore.java:377) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.RandomAccessStore.writeChunk(RandomAccessStore.java:28) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.FileStore.storeBuffer(FileStore.java:1524) ~[h2-2.2.224.jar:2.2.224]
+	... 6 common frames omitted
+
+2024-01-09T21:43:45.371+05:30  WARN 6484 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [com.Airport.AirportApiApplicationTests@23aebf61]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@ec75805 testClass = com.Airport.AirportApiApplicationTests, locations = [], classes = [com.Airport.AirportApiApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3961a41a, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@cd7f1ae, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@304b9f1a, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@3088660d, org.springframework.boot.test.context.SpringBootTestAnnotation@a75b4446], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:130) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:382) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:377) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:376) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:289) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:288) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:278) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:277) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:105) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68) ~[junit-jupiter-engine-5.9.2.jar:5.9.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:94) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:70) ~[junit-platform-launcher-1.10.1.jar:1.10.1]
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452) ~[.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) ~[.cp/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to build DatabaseInformation [The database has been closed [90098-224]] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1773) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1232) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:950) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-6.1.2.jar:6.1.2]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1458) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:552) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108) ~[spring-boot-test-3.2.1.jar:3.2.1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225) ~[spring-test-6.1.2.jar:6.1.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152) ~[spring-test-6.1.2.jar:6.1.2]
+	... 72 common frames omitted
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to build DatabaseInformation [The database has been closed [90098-224]] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.1.2.jar:6.1.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.2.jar:6.1.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1820) ~[spring-beans-6.1.2.jar:6.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1769) ~[spring-beans-6.1.2.jar:6.1.2]
+	... 93 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to build DatabaseInformation [The database has been closed [90098-224]] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:51) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:194) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:98) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.2.jar:6.1.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.2.jar:6.1.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.2.jar:6.1.2]
+	... 97 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database has been closed [90098-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.message.DbException.get(DbException.java:212) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.engine.SessionLocal.getTransaction(SessionLocal.java:1610) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.engine.SessionLocal.startStatementWithinTransaction(SessionLocal.java:1631) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.command.Command.executeQuery(Command.java:186) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:131) ~[h2-2.2.224.jar:2.2.224]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:49) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	... 110 common frames omitted
+Caused by: org.h2.mvstore.MVStoreException: java.lang.AssertionError: 20480 != 16384 [2.2.224/3]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.FileStore.storeBuffer(FileStore.java:1529) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.FileStore.lambda$serializeAndStore$3(FileStore.java:1432) ~[h2-2.2.224.jar:2.2.224]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.lang.AssertionError: 20480 != 16384
+	at org.h2.mvstore.RandomAccessStore.shrinkStoreIfPossible(RandomAccessStore.java:679) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.RandomAccessStore.writeChunk(RandomAccessStore.java:377) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.RandomAccessStore.writeChunk(RandomAccessStore.java:28) ~[h2-2.2.224.jar:2.2.224]
+	at org.h2.mvstore.FileStore.storeBuffer(FileStore.java:1524) ~[h2-2.2.224.jar:2.2.224]
+	... 6 common frames omitted
+
+2024-01-09T21:43:45.407+05:30  INFO 6484 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-09T21:43:46.305+05:30  INFO 6484 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
+2024-01-09T21:43:46.338+05:30  INFO 6484 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
+2024-01-09T21:43:46.349+05:30  INFO 6484 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
+2024-01-09T21:43:46.357+05:30  INFO 6484 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
+2024-01-09T21:43:46.364+05:30  INFO 6484 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
+2024-01-09T21:43:46.375+05:30  INFO 6484 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-09T21:43:46.452+05:30  INFO 6484 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-09T21:43:46.476+05:30  INFO 6484 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-09T21:43:46.483+05:30  INFO 6484 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T21:43:46.490+05:30  INFO 6484 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T21:43:46.499+05:30  INFO 6484 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
+2024-01-09T21:46:23.134+05:30  INFO 18520 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 18520 (started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T21:46:23.137+05:30  INFO 18520 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T21:46:24.156+05:30  INFO 18520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T21:46:24.248+05:30  INFO 18520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interface.
+2024-01-09T21:46:24.832+05:30  INFO 18520 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T21:46:24.928+05:30  INFO 18520 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-09T21:46:24.994+05:30  INFO 18520 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T21:46:25.360+05:30  INFO 18520 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T21:46:25.427+05:30  INFO 18520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-09T21:46:25.854+05:30  INFO 18520 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T21:46:25.857+05:30  INFO 18520 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-09T21:46:25.891+05:30  WARN 18520 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T21:46:27.035+05:30  INFO 18520 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T21:46:27.116+05:30  INFO 18520 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T21:46:28.025+05:30  WARN 18520 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-09T21:46:28.081+05:30  INFO 18520 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-09T21:46:28.183+05:30  INFO 18520 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 5.559 seconds (process running for 7.173)
+2024-01-09T21:46:28.806+05:30  INFO 18520 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-09T21:46:29.240+05:30  INFO 18520 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
+2024-01-09T21:46:29.284+05:30  INFO 18520 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
+2024-01-09T21:46:29.300+05:30  INFO 18520 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
+2024-01-09T21:46:29.308+05:30  INFO 18520 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
+2024-01-09T21:46:29.317+05:30  INFO 18520 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
+2024-01-09T21:46:29.331+05:30  INFO 18520 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-09T21:46:29.384+05:30  INFO 18520 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-09T21:46:29.397+05:30  INFO 18520 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-09T21:46:29.403+05:30  INFO 18520 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T21:46:29.410+05:30  INFO 18520 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T21:46:29.419+05:30  INFO 18520 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
+2024-01-09T21:46:29.928+05:30  INFO 18520 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T21:46:29.934+05:30  INFO 18520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-09T21:46:29.937+05:30  INFO 18520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-09T21:47:03.634+05:30  INFO 3492 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 3492 (started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T21:47:03.637+05:30  INFO 3492 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T21:47:04.614+05:30  INFO 3492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T21:47:04.697+05:30  INFO 3492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interface.
+2024-01-09T21:47:05.299+05:30  INFO 3492 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T21:47:05.387+05:30  INFO 3492 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-09T21:47:05.449+05:30  INFO 3492 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T21:47:05.860+05:30  INFO 3492 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T21:47:05.907+05:30  INFO 3492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-09T21:47:06.337+05:30  INFO 3492 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T21:47:06.340+05:30  INFO 3492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-09T21:47:06.391+05:30  WARN 3492 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T21:47:07.531+05:30  INFO 3492 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T21:47:07.609+05:30  INFO 3492 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T21:47:08.527+05:30  WARN 3492 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-09T21:47:08.583+05:30  INFO 3492 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-09T21:47:08.671+05:30  INFO 3492 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 5.548 seconds (process running for 7.202)
+2024-01-09T21:47:09.292+05:30  INFO 3492 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-09T21:47:09.729+05:30  INFO 3492 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
+2024-01-09T21:47:09.761+05:30  INFO 3492 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
+2024-01-09T21:47:09.777+05:30  INFO 3492 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
+2024-01-09T21:47:09.786+05:30  INFO 3492 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
+2024-01-09T21:47:09.795+05:30  INFO 3492 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
+2024-01-09T21:47:09.806+05:30  INFO 3492 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-09T21:47:09.853+05:30  INFO 3492 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-09T21:47:09.869+05:30  INFO 3492 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-09T21:47:09.875+05:30  INFO 3492 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T21:47:09.882+05:30  INFO 3492 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T21:47:09.889+05:30  INFO 3492 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
+2024-01-09T21:47:10.382+05:30  INFO 3492 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T21:47:10.389+05:30  INFO 3492 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-09T21:47:10.392+05:30  INFO 3492 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-09T21:48:35.347+05:30  INFO 5548 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 5548 (C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI\target\classes started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T21:48:35.350+05:30  INFO 5548 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T21:48:35.408+05:30  INFO 5548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09T21:48:35.408+05:30  INFO 5548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09T21:48:36.075+05:30  INFO 5548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T21:48:36.125+05:30  INFO 5548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2024-01-09T21:48:36.715+05:30  INFO 5548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 11478 (http)
+2024-01-09T21:48:36.734+05:30  INFO 5548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-09T21:48:36.734+05:30  INFO 5548 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-09T21:48:36.797+05:30  INFO 5548 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-09T21:48:36.797+05:30  INFO 5548 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1389 ms
+2024-01-09T21:48:36.841+05:30  INFO 5548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-09T21:48:37.036+05:30  INFO 5548 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T21:48:37.038+05:30  INFO 5548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-09T21:48:37.051+05:30  INFO 5548 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-09T21:48:37.198+05:30  INFO 5548 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T21:48:37.247+05:30  INFO 5548 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-09T21:48:37.281+05:30  INFO 5548 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T21:48:37.507+05:30  INFO 5548 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T21:48:37.553+05:30  WARN 5548 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T21:48:38.194+05:30  INFO 5548 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T21:48:38.235+05:30  INFO 5548 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T21:48:38.892+05:30  WARN 5548 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-09T21:48:39.017+05:30  INFO 5548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-09T21:48:39.073+05:30  INFO 5548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11478 (http) with context path ''
+2024-01-09T21:48:39.086+05:30  INFO 5548 --- [restartedMain] com.Airport.AirportApiApplication        : Started AirportApiApplication in 4.095 seconds (process running for 4.49)
+2024-01-09T21:48:45.506+05:30  INFO 5548 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-01-09T21:48:45.521+05:30  INFO 5548 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T21:48:45.525+05:30  INFO 5548 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-09T21:48:45.548+05:30  INFO 5548 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-09T21:48:45.607+05:30  INFO 5548 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 5548 (C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI\target\classes started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T21:48:45.608+05:30  INFO 5548 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T21:48:45.810+05:30  INFO 5548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T21:48:45.821+05:30  INFO 5548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-01-09T21:48:45.918+05:30  INFO 5548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 11478 (http)
+2024-01-09T21:48:45.919+05:30  INFO 5548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-09T21:48:45.919+05:30  INFO 5548 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-09T21:48:45.934+05:30  INFO 5548 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-09T21:48:45.935+05:30  INFO 5548 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 325 ms
+2024-01-09T21:48:45.946+05:30  INFO 5548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-01-09T21:48:45.975+05:30  INFO 5548 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T21:48:45.975+05:30  INFO 5548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-01-09T21:48:45.976+05:30  INFO 5548 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-09T21:48:45.995+05:30  INFO 5548 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T21:48:45.998+05:30  INFO 5548 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T21:48:46.001+05:30  INFO 5548 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T21:48:46.003+05:30  WARN 5548 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T21:48:46.029+05:30  INFO 5548 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T21:48:46.031+05:30  INFO 5548 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T21:48:46.190+05:30  WARN 5548 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-09T21:48:46.223+05:30  INFO 5548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-09T21:48:46.233+05:30  INFO 5548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11478 (http) with context path ''
+2024-01-09T21:48:46.237+05:30  INFO 5548 --- [restartedMain] com.Airport.AirportApiApplication        : Started AirportApiApplication in 0.653 seconds (process running for 11.641)
+2024-01-09T21:48:46.240+05:30  INFO 5548 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-09T22:01:14.257+05:30  WARN 5548 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=3m58s50ms408µs100ns).
+2024-01-09T22:10:17.650+05:30  WARN 5548 --- [HikariPool-2 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=6m3s330ms477µs400ns).
+2024-01-09T22:15:41.617+05:30  INFO 5548 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-01-09T22:15:41.629+05:30  INFO 5548 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T22:15:41.631+05:30  INFO 5548 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-01-09T22:15:41.657+05:30  INFO 5548 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-01-09T22:15:41.718+05:30  INFO 5548 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 5548 (C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI\target\classes started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T22:15:41.719+05:30  INFO 5548 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T22:15:41.997+05:30  INFO 5548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T22:15:42.006+05:30  INFO 5548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2024-01-09T22:15:42.080+05:30  INFO 5548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 11478 (http)
+2024-01-09T22:15:42.080+05:30  INFO 5548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-09T22:15:42.080+05:30  INFO 5548 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-09T22:15:42.092+05:30  INFO 5548 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-09T22:15:42.092+05:30  INFO 5548 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 370 ms
+2024-01-09T22:15:42.103+05:30  INFO 5548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-01-09T22:15:42.120+05:30  INFO 5548 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T22:15:42.121+05:30  INFO 5548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-01-09T22:15:42.121+05:30  INFO 5548 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-09T22:15:42.137+05:30  INFO 5548 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T22:15:42.139+05:30  INFO 5548 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T22:15:42.141+05:30  INFO 5548 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T22:15:42.143+05:30  WARN 5548 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T22:15:42.164+05:30  INFO 5548 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T22:15:42.166+05:30  INFO 5548 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T22:15:42.291+05:30  WARN 5548 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-09T22:15:42.328+05:30  INFO 5548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-09T22:15:42.338+05:30  INFO 5548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11478 (http) with context path ''
+2024-01-09T22:15:42.342+05:30  INFO 5548 --- [restartedMain] com.Airport.AirportApiApplication        : Started AirportApiApplication in 0.65 seconds (process running for 1627.746)
+2024-01-09T22:15:42.344+05:30  INFO 5548 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-09T22:19:20.705+05:30  INFO 5548 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-01-09T22:19:20.723+05:30  INFO 5548 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T22:19:20.724+05:30  INFO 5548 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-01-09T22:19:20.929+05:30  INFO 5548 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-01-09T22:19:21.005+05:30  INFO 5548 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 5548 (C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI\target\classes started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T22:19:21.005+05:30  INFO 5548 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T22:19:21.192+05:30  INFO 5548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T22:19:21.202+05:30  INFO 5548 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-01-09T22:19:21.271+05:30  INFO 5548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 11478 (http)
+2024-01-09T22:19:21.272+05:30  INFO 5548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-09T22:19:21.272+05:30  INFO 5548 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-09T22:19:21.292+05:30  INFO 5548 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-09T22:19:21.292+05:30  INFO 5548 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 284 ms
+2024-01-09T22:19:21.303+05:30  INFO 5548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-01-09T22:19:21.327+05:30  INFO 5548 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T22:19:21.327+05:30  INFO 5548 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-01-09T22:19:21.328+05:30  INFO 5548 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-09T22:19:21.343+05:30  INFO 5548 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T22:19:21.345+05:30  INFO 5548 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T22:19:21.347+05:30  INFO 5548 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T22:19:21.349+05:30  WARN 5548 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T22:19:21.371+05:30  INFO 5548 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T22:19:21.374+05:30  INFO 5548 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T22:19:21.471+05:30  WARN 5548 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-09T22:19:21.492+05:30  INFO 5548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-09T22:19:21.504+05:30  INFO 5548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11478 (http) with context path ''
+2024-01-09T22:19:21.506+05:30  INFO 5548 --- [restartedMain] com.Airport.AirportApiApplication        : Started AirportApiApplication in 0.523 seconds (process running for 1846.91)
+2024-01-09T22:19:21.508+05:30  INFO 5548 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-09T23:26:43.181+05:30  INFO 7408 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 7408 (started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T23:26:43.184+05:30  INFO 7408 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T23:26:44.633+05:30  INFO 7408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T23:26:44.776+05:30  INFO 7408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 1 JPA repository interface.
+2024-01-09T23:26:45.747+05:30  INFO 7408 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T23:26:45.929+05:30  INFO 7408 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-09T23:26:46.035+05:30  INFO 7408 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T23:26:46.725+05:30  INFO 7408 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T23:26:46.795+05:30  INFO 7408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-09T23:26:47.298+05:30  INFO 7408 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T23:26:47.301+05:30  INFO 7408 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-09T23:26:47.351+05:30  WARN 7408 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T23:26:48.634+05:30  INFO 7408 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T23:26:48.701+05:30  INFO 7408 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T23:26:49.661+05:30  WARN 7408 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-09T23:26:49.708+05:30  INFO 7408 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-09T23:26:49.842+05:30  INFO 7408 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 7.158 seconds (process running for 9.034)
+2024-01-09T23:26:50.405+05:30  INFO 7408 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-09T23:26:50.824+05:30  INFO 7408 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
+2024-01-09T23:26:50.857+05:30  INFO 7408 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
+2024-01-09T23:26:50.873+05:30  INFO 7408 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
+2024-01-09T23:26:50.880+05:30  INFO 7408 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
+2024-01-09T23:26:50.887+05:30  INFO 7408 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
+2024-01-09T23:26:50.952+05:30  INFO 7408 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-09T23:26:51.000+05:30  INFO 7408 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-09T23:26:51.013+05:30  INFO 7408 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-09T23:26:51.017+05:30  INFO 7408 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
+2024-01-09T23:26:51.023+05:30  INFO 7408 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T23:26:51.030+05:30  INFO 7408 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T23:26:51.036+05:30  INFO 7408 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
+2024-01-09T23:26:51.043+05:30  INFO 7408 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
+2024-01-09T23:26:51.048+05:30  INFO 7408 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
+2024-01-09T23:26:51.054+05:30  INFO 7408 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
+2024-01-09T23:26:51.578+05:30  INFO 7408 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T23:26:51.587+05:30  INFO 7408 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-09T23:26:51.593+05:30  INFO 7408 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-09T23:27:42.382+05:30  INFO 14640 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 14640 (started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T23:27:42.385+05:30  INFO 14640 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T23:27:43.343+05:30  INFO 14640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T23:27:43.426+05:30  INFO 14640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
+2024-01-09T23:27:44.019+05:30  INFO 14640 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T23:27:44.114+05:30  INFO 14640 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-09T23:27:44.174+05:30  INFO 14640 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T23:27:44.575+05:30  INFO 14640 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T23:27:44.620+05:30  INFO 14640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-09T23:27:45.053+05:30  INFO 14640 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T23:27:45.057+05:30  INFO 14640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-09T23:27:45.110+05:30  WARN 14640 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T23:27:46.146+05:30  INFO 14640 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T23:27:46.205+05:30  INFO 14640 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T23:27:47.074+05:30  WARN 14640 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-09T23:27:47.131+05:30  INFO 14640 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-09T23:27:47.221+05:30  INFO 14640 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 5.352 seconds (process running for 6.964)
+2024-01-09T23:27:47.819+05:30  INFO 14640 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-09T23:27:48.247+05:30  INFO 14640 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
+2024-01-09T23:27:48.273+05:30  INFO 14640 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
+2024-01-09T23:27:48.289+05:30  INFO 14640 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
+2024-01-09T23:27:48.296+05:30  INFO 14640 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
+2024-01-09T23:27:48.301+05:30  INFO 14640 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
+2024-01-09T23:27:48.322+05:30  INFO 14640 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-09T23:27:48.384+05:30  INFO 14640 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-09T23:27:48.400+05:30  INFO 14640 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-09T23:27:48.405+05:30  INFO 14640 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
+2024-01-09T23:27:48.411+05:30  INFO 14640 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T23:27:48.416+05:30  INFO 14640 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T23:27:48.422+05:30  INFO 14640 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
+2024-01-09T23:27:48.429+05:30  INFO 14640 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
+2024-01-09T23:27:48.436+05:30  INFO 14640 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
+2024-01-09T23:27:48.442+05:30  INFO 14640 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
+2024-01-09T23:27:48.952+05:30  INFO 14640 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T23:27:48.968+05:30  INFO 14640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-09T23:27:48.973+05:30  INFO 14640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-09T23:29:00.488+05:30  INFO 3860 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 3860 (started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T23:29:00.492+05:30  INFO 3860 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T23:29:01.465+05:30  INFO 3860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T23:29:01.543+05:30  INFO 3860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
+2024-01-09T23:29:02.446+05:30  INFO 3860 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T23:29:02.599+05:30  INFO 3860 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-09T23:29:02.696+05:30  INFO 3860 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T23:29:03.404+05:30  INFO 3860 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T23:29:03.479+05:30  INFO 3860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-09T23:29:04.208+05:30  INFO 3860 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T23:29:04.213+05:30  INFO 3860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-09T23:29:04.327+05:30  WARN 3860 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T23:29:05.598+05:30  INFO 3860 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T23:29:05.672+05:30  INFO 3860 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T23:29:06.699+05:30  WARN 3860 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-09T23:29:06.757+05:30  INFO 3860 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-09T23:29:06.849+05:30  INFO 3860 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 6.857 seconds (process running for 8.425)
+2024-01-09T23:29:07.420+05:30  INFO 3860 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-09T23:29:07.856+05:30  INFO 3860 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
+2024-01-09T23:29:07.892+05:30  INFO 3860 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
+2024-01-09T23:29:07.909+05:30  INFO 3860 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
+2024-01-09T23:29:07.916+05:30  INFO 3860 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
+2024-01-09T23:29:07.926+05:30  INFO 3860 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
+2024-01-09T23:29:07.935+05:30  INFO 3860 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-09T23:29:07.990+05:30  INFO 3860 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-09T23:29:08.006+05:30  INFO 3860 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-09T23:29:08.014+05:30  INFO 3860 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
+2024-01-09T23:29:08.020+05:30  INFO 3860 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T23:29:08.028+05:30  INFO 3860 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T23:29:08.034+05:30  INFO 3860 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
+2024-01-09T23:29:08.040+05:30  INFO 3860 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
+2024-01-09T23:29:08.048+05:30  INFO 3860 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
+2024-01-09T23:29:08.054+05:30  INFO 3860 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
+2024-01-09T23:29:08.516+05:30  INFO 3860 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T23:29:08.526+05:30  INFO 3860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-09T23:29:08.530+05:30  INFO 3860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-09T23:30:04.204+05:30  INFO 6196 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 6196 (C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI\target\classes started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T23:30:04.206+05:30  INFO 6196 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T23:30:04.271+05:30  INFO 6196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09T23:30:04.271+05:30  INFO 6196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09T23:30:04.931+05:30  INFO 6196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T23:30:04.976+05:30  INFO 6196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2024-01-09T23:30:05.607+05:30  INFO 6196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 11478 (http)
+2024-01-09T23:30:05.631+05:30  INFO 6196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-09T23:30:05.631+05:30  INFO 6196 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-09T23:30:05.692+05:30  INFO 6196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-09T23:30:05.693+05:30  INFO 6196 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1422 ms
+2024-01-09T23:30:05.733+05:30  INFO 6196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-09T23:30:05.949+05:30  INFO 6196 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T23:30:05.952+05:30  INFO 6196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-09T23:30:05.965+05:30  INFO 6196 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-09T23:30:06.137+05:30  INFO 6196 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T23:30:06.191+05:30  INFO 6196 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-09T23:30:06.230+05:30  INFO 6196 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T23:30:06.438+05:30  INFO 6196 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T23:30:06.484+05:30  WARN 6196 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T23:30:07.152+05:30  INFO 6196 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T23:30:07.188+05:30  INFO 6196 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T23:30:07.905+05:30  WARN 6196 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-09T23:30:08.062+05:30  INFO 6196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-09T23:30:08.141+05:30  INFO 6196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11478 (http) with context path ''
+2024-01-09T23:30:08.157+05:30  INFO 6196 --- [restartedMain] com.Airport.AirportApiApplication        : Started AirportApiApplication in 4.307 seconds (process running for 4.784)
+2024-01-09T23:30:21.314+05:30  INFO 6196 --- [http-nio-11478-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09T23:30:21.315+05:30  INFO 6196 --- [http-nio-11478-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-09T23:30:21.318+05:30  INFO 6196 --- [http-nio-11478-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-09T23:30:21.324+05:30  INFO 6196 --- [http-nio-11478-exec-2] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-09T23:30:21.359+05:30  INFO 6196 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/api/v1/airports
+2024-01-09T23:30:21.378+05:30  INFO 6196 --- [http-nio-11478-exec-2] c.Airport.Controller.AirportController   : Fetching all airport details.
+2024-01-09T23:30:21.378+05:30  INFO 6196 --- [http-nio-11478-exec-2] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
+2024-01-09T23:30:21.836+05:30  INFO 6196 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/api/v1/airports
+2024-01-09T23:30:21.837+05:30  INFO 6196 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/api/v1/airports
+2024-01-09T23:30:35.513+05:30  INFO 6196 --- [http-nio-11478-exec-3] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-09T23:30:35.514+05:30  INFO 6196 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/api/v1/airport/HYD
+2024-01-09T23:30:35.547+05:30  INFO 6196 --- [http-nio-11478-exec-3] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-09T23:30:35.569+05:30 ERROR 6196 --- [http-nio-11478-exec-3] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: HYD
+2024-01-09T23:30:35.582+05:30  INFO 6196 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/api/v1/airport/HYD
+2024-01-09T23:30:35.582+05:30  INFO 6196 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/api/v1/airport/HYD
+2024-01-09T23:30:49.589+05:30  INFO 6196 --- [http-nio-11478-exec-4] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-09T23:30:49.590+05:30  INFO 6196 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. POST:/api/v1/airports
+2024-01-09T23:30:49.677+05:30  INFO 6196 --- [http-nio-11478-exec-4] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-09T23:30:50.270+05:30  INFO 6196 --- [http-nio-11478-exec-4] c.A.S.AirportServiceImplementation       : Creating airport...
+2024-01-09T23:30:50.362+05:30  INFO 6196 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. POST:/api/v1/airports
+2024-01-09T23:30:50.362+05:30  INFO 6196 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. POST:/api/v1/airports
+2024-01-09T23:31:24.218+05:30  INFO 6196 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-01-09T23:31:24.238+05:30  INFO 6196 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T23:31:24.242+05:30  INFO 6196 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-09T23:31:24.269+05:30  INFO 6196 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-09T23:31:24.338+05:30  INFO 6196 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 6196 (C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI\target\classes started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T23:31:24.338+05:30  INFO 6196 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T23:31:24.548+05:30  INFO 6196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T23:31:24.559+05:30  INFO 6196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2024-01-09T23:31:24.640+05:30  INFO 6196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 11478 (http)
+2024-01-09T23:31:24.641+05:30  INFO 6196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-09T23:31:24.641+05:30  INFO 6196 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-09T23:31:24.658+05:30  INFO 6196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-09T23:31:24.658+05:30  INFO 6196 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 317 ms
+2024-01-09T23:31:24.670+05:30  INFO 6196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-01-09T23:31:24.686+05:30  INFO 6196 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T23:31:24.686+05:30  INFO 6196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-01-09T23:31:24.687+05:30  INFO 6196 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-09T23:31:24.713+05:30  INFO 6196 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T23:31:24.716+05:30  INFO 6196 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T23:31:24.720+05:30  INFO 6196 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T23:31:24.721+05:30  WARN 6196 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T23:31:24.752+05:30  INFO 6196 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T23:31:24.754+05:30  INFO 6196 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T23:31:24.892+05:30  WARN 6196 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-09T23:31:24.923+05:30  INFO 6196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-09T23:31:24.936+05:30  INFO 6196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11478 (http) with context path ''
+2024-01-09T23:31:24.940+05:30  INFO 6196 --- [restartedMain] com.Airport.AirportApiApplication        : Started AirportApiApplication in 0.626 seconds (process running for 81.566)
+2024-01-09T23:31:24.942+05:30  INFO 6196 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-09T23:32:03.874+05:30  INFO 6196 --- [http-nio-11478-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09T23:32:03.875+05:30  INFO 6196 --- [http-nio-11478-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-09T23:32:03.877+05:30  INFO 6196 --- [http-nio-11478-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-01-09T23:32:03.878+05:30  INFO 6196 --- [http-nio-11478-exec-2] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-09T23:32:03.880+05:30  INFO 6196 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. DELETE:/api/v1/airport/BLR123
+2024-01-09T23:32:03.883+05:30  INFO 6196 --- [http-nio-11478-exec-2] c.Airport.Controller.AirportController   : deleting specific airport details.
+2024-01-09T23:32:03.895+05:30  INFO 6196 --- [http-nio-11478-exec-2] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
+2024-01-09T23:32:03.916+05:30  INFO 6196 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. DELETE:/api/v1/airport/BLR123
+2024-01-09T23:32:03.916+05:30  INFO 6196 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. DELETE:/api/v1/airport/BLR123
+2024-01-09T23:32:12.110+05:30  INFO 6196 --- [http-nio-11478-exec-3] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-09T23:32:12.111+05:30  INFO 6196 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. DELETE:/api/v1/airport/BLR1235
+2024-01-09T23:32:12.112+05:30  INFO 6196 --- [http-nio-11478-exec-3] c.Airport.Controller.AirportController   : deleting specific airport details.
+2024-01-09T23:32:12.116+05:30 ERROR 6196 --- [http-nio-11478-exec-3] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
+2024-01-09T23:32:12.119+05:30  INFO 6196 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. DELETE:/api/v1/airport/BLR1235
+2024-01-09T23:32:12.120+05:30  INFO 6196 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. DELETE:/api/v1/airport/BLR1235
+2024-01-09T23:32:26.529+05:30  INFO 6196 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-01-09T23:32:26.546+05:30  INFO 6196 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T23:32:26.547+05:30  INFO 6196 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-01-09T23:32:26.572+05:30  INFO 6196 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-01-09T23:32:26.636+05:30  INFO 6196 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 6196 (C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI\target\classes started by pashe in C:\Users\pashe\Documents\abhi\spring-AirportAPI\AirportAPI)
+2024-01-09T23:32:26.637+05:30  INFO 6196 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-01-09T23:32:26.799+05:30  INFO 6196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-09T23:32:26.810+05:30  INFO 6196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2024-01-09T23:32:26.881+05:30  INFO 6196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 11478 (http)
+2024-01-09T23:32:26.881+05:30  INFO 6196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-09T23:32:26.881+05:30  INFO 6196 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-09T23:32:26.897+05:30  INFO 6196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-09T23:32:26.898+05:30  INFO 6196 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 259 ms
+2024-01-09T23:32:26.907+05:30  INFO 6196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-01-09T23:32:26.925+05:30  INFO 6196 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-09T23:32:26.925+05:30  INFO 6196 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-01-09T23:32:26.925+05:30  INFO 6196 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-09T23:32:26.943+05:30  INFO 6196 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-09T23:32:26.946+05:30  INFO 6196 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-09T23:32:26.950+05:30  INFO 6196 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-09T23:32:26.951+05:30  WARN 6196 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-09T23:32:26.973+05:30  INFO 6196 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-09T23:32:26.974+05:30  INFO 6196 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-09T23:32:27.084+05:30  WARN 6196 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-09T23:32:27.109+05:30  INFO 6196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-09T23:32:27.118+05:30  INFO 6196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11478 (http) with context path ''
+2024-01-09T23:32:27.121+05:30  INFO 6196 --- [restartedMain] com.Airport.AirportApiApplication        : Started AirportApiApplication in 0.511 seconds (process running for 143.747)
+2024-01-09T23:32:27.122+05:30  INFO 6196 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

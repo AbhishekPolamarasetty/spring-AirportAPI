@@ -1,9 +1,6 @@
 package com.Airport.service;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.doNothing;
-import static org.mockito.Mockito.doThrow;
-//import static org.mockito.Mockito.when;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
@@ -17,7 +14,6 @@ import org.mockito.Mock;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.Airport.Entity.Airport;
-import com.Airport.Exception.AirportNotFoundException;
 import com.Airport.Repository.AirportRepository;
 import com.Airport.Service.AirportServiceImplementation;
 
@@ -35,14 +31,17 @@ public class AirportServiceTest {
 		List<Airport> airport = new ArrayList<>();
 		airport.add(new Airport("VSKP","visakhapatnam international airport","Vizag"));
 		airport.add(new Airport("HYD","Hyderabad international airport","secunderabad"));
+		
 		when(airportRepository.findAll()).thenReturn(airport);
 		assertEquals(2,airportServiceImplementation.getAllAirports().size());
 	}
+	
 	
 	@Test
 	public void test_getairportByIATA() {
 		Optional<Airport> expectedAirport = Optional.of(new Airport("VSKP","ABC", "Airport ABC"));
 		String IATACODE = "VSKP";
+		
 		when(airportRepository.findById(IATACODE)).thenReturn(expectedAirport);
 		assertEquals(IATACODE,airportServiceImplementation.getAirport(IATACODE).getIATACODE());
 	}
@@ -51,17 +50,29 @@ public class AirportServiceTest {
 		Airport airport = new Airport("BLR","bengaluru airport","Bengaluru");
 		
 		when(airportRepository.save(airport)).thenReturn(airport);
-		assertEquals("Success",airportServiceImplementation.createAirport(airport));
+		assertEquals(airport,airportServiceImplementation.createAirport(airport));
 	}
-	
+
 	@Test
 	public void test_deleteAirports() {
-		Airport airport = new Airport("BLR","bengaluru airport","Bengaluru");
 		String IATACODE = "BLR";
-		
-		doThrow(new AirportNotFoundException("Airport with IATA code does not exist")).when(airportRepository).deleteById("IATACODE");
+		when(airportRepository.existsById(IATACODE)).thenReturn(true);
 
 		assertEquals("Airport deleted successfully",airportServiceImplementation.deleteAirport(IATACODE));
 	}
+	@Test
+	public void test_updateAirpots() {
+		String IATACODE = "BLR";
+		Airport updatedairport = new Airport("BLR","bengaluru International airport","smvt bengaluru");
+		Airport existingAirport = new Airport("BLR", "bengaluru airport", "bengaluru");
+		Optional<Airport> optionalExistingAirport = Optional.of(existingAirport);
+		
+		when(airportRepository.findById(IATACODE)).thenReturn(optionalExistingAirport);
+		Airport result = airportServiceImplementation.updateAirport(IATACODE, updatedairport);
+		assertEquals(updatedairport, result);
+	}
 
 }
+
+
+

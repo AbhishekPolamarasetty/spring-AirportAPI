@@ -30,16 +30,17 @@ public class AirportServiceImplementation implements AirportService{
 		log.info("Fetching all airports from the repository.");
 		return airportRepository.findAll();
 	}
-	
+
 	@Override
-	public String createAirport(Airport airport) {
+	public Airport createAirport(Airport airport) {
 	  
 	        if (!airportRepository.existsById(airport.getIATACODE())) {
 	        	log.info("Creating airport...");
 		        airportRepository.save(airport);
-		        return "Success";
+		        return airport;
 	        }
 
+	        
 	        else {
 	        	 log.error("Airport is already Exists");
 	             throw new AirportAlreadyExists("Airport with IATA code already exists");
@@ -60,11 +61,11 @@ public class AirportServiceImplementation implements AirportService{
 		        throw new AirportNotFoundException("Requested airport does not exist");
 			}
 		   
-	    
+	   
 	}
 	
 	@Override
-	public String updateAirport(String IATACode, Airport updatedAirport) {
+	public Airport updateAirport(String IATACode, Airport updatedAirport) {
 	    Optional <Airport> optionalExistingAirport = airportRepository.findById(IATACode);
 
 	    if (optionalExistingAirport.isPresent()) {
@@ -75,7 +76,7 @@ public class AirportServiceImplementation implements AirportService{
 	        existingAirport.setCityName(updatedAirport.getCityName());
 	      
 	        airportRepository.save(existingAirport);
-	        return "Airport details updated successfully";
+	        return updatedAirport;
 	    } else {
 	    	log.error("Airport with IATA code does not exist");
 	        throw new AirportNotFoundException("Airport with IATA code does not exist");
