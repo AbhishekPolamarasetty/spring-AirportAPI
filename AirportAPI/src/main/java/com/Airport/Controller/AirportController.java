@@ -18,8 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.Airport.Entity.Airport;
 import com.Airport.Exception.AirportAlreadyExists;
 import com.Airport.Exception.AirportNotFoundException;
-//import com.Airport.Exception.AirportAlreadyExists;
-//import com.Airport.Exception.AirportNotFoundException;
 import com.Airport.Service.AirportService;
 
 import lombok.extern.slf4j.Slf4j;
