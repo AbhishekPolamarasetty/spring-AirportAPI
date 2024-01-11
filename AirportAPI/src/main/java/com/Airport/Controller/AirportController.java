@@ -62,7 +62,7 @@ public class AirportController{
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMes("404"));
 		}
 
-	}
+	} 
 
 	@PutMapping("airport/{IATACODE}")
 	public ResponseEntity <?> updateAirportDetails(@PathVariable ("IATACODE") String IATACODE, @RequestBody Airport airport) {

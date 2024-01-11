@@ -17,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Service
 @Slf4j
-public class AirportServiceImplementation implements AirportService{
+public class AirportServiceImplementation implements AirportService{ 
 	
 //	private static final Logger logger = LoggerFactory.getLogger(AirportServiceImplementation.class);
 	
@@ -40,7 +40,6 @@ public class AirportServiceImplementation implements AirportService{
 		        return airport;
 	        }
 
-	        
 	        else {
 	        	 log.error("Airport is already Exists");
 	             throw new AirportAlreadyExists("Airport with IATA code already exists");
@@ -63,7 +62,7 @@ public class AirportServiceImplementation implements AirportService{
 		   
 	   
 	}
-	
+
 	@Override
 	public Airport updateAirport(String IATACode, Airport updatedAirport) {
 	    Optional <Airport> optionalExistingAirport = airportRepository.findById(IATACode);
@@ -88,7 +87,7 @@ public class AirportServiceImplementation implements AirportService{
 		
 	        if (airportRepository.existsById(airportIATACODE)) {
 	            log.info("Deleting specific airport from the repository.");
-	            airportRepository.deleteById(airportIATACODE);
+	            airportRepository.deleteById(airportIATACODE); 
 	            return "Airport deleted successfully";
 	        } 
 	        else {

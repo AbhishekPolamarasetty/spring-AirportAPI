@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @Table(name="Airport_details")
 public class Airport {
 	
-	@Id
+	@Id 
 	@JsonProperty("IATA_code")
 	@Column(name="IATA_code")
 	private String IATACODE;
