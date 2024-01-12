@@ -1,7 +1,7 @@
 package com.Airport.Controller;
 
 
-import java.util.List;
+//import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -30,14 +30,17 @@ public class AirportController{
 	
 	@Autowired
 	private AirportService airportService;
-
 	
+//	public List<Airport> getAllAirportDetails() {
+//		log.info("Fetching all airport details.");
+//		return airportService.getAllAirports();
+//	}
 	@GetMapping("/airports")
-	public List<Airport> getAllAirportDetails() {
+	public ResponseEntity<?> getAllAirportDetails() {
 		log.info("Fetching all airport details.");
-		return airportService.getAllAirports();
+		return ResponseEntity.ok(airportService.getAllAirports());
 	}
-	
+//	}
 	@PostMapping("/airports")
 	public ResponseEntity<?> createAirportDetails(@RequestBody Airport airport) {
 	    log.info("creating all airport details.");
@@ -50,7 +53,7 @@ public class AirportController{
 		}
 	    
 	}
-
+ 
 	
 	@GetMapping("airport/{IATACODE}")
 	public ResponseEntity<?> getAirportDetails(@PathVariable("IATACODE") String IATACODE ) {

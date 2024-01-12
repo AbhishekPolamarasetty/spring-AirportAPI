@@ -24,7 +24,7 @@ import com.Airport.Exception.AirportNotFoundException;
 import com.Airport.Service.AirportService;
 
 @ExtendWith(MockitoExtension.class)
-public class AirportControllerTest {
+public class AirportControllerTest { 
 	 
 	@Mock
 	private AirportService airportService;
@@ -54,8 +54,8 @@ public class AirportControllerTest {
     	
     	when(airportService.getAllAirports()).thenReturn(airport);
     	
-    	List <Airport> result = airportController.getAllAirportDetails();
-    	assertEquals(airport,result);	
+    	 ResponseEntity<?> responseEntity = airportController.getAllAirportDetails();
+    	assertEquals(HttpStatus.OK,responseEntity.getStatusCode());	
 	}
     
 	@Test

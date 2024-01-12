@@ -1,778 +1,217 @@
-2024-01-11T10:12:00.703+05:30  INFO 21212 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 21212 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T10:12:00.717+05:30  INFO 21212 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T10:12:02.739+05:30  INFO 21212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T10:12:02.896+05:30  INFO 21212 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 1 JPA repository interface.
-2024-01-11T10:12:04.014+05:30  INFO 21212 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T10:12:04.261+05:30  INFO 21212 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T10:12:04.393+05:30  INFO 21212 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T10:12:05.166+05:30  INFO 21212 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T10:12:05.324+05:30  INFO 21212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T10:12:06.124+05:30  INFO 21212 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T10:12:06.131+05:30  INFO 21212 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T10:12:06.324+05:30  WARN 21212 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T10:12:08.506+05:30  INFO 21212 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T10:12:08.615+05:30  INFO 21212 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T10:12:10.164+05:30  WARN 21212 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T10:12:10.243+05:30  INFO 21212 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T10:12:10.492+05:30  INFO 21212 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 10.482 seconds (process running for 14.284)
-2024-01-11T10:12:11.865+05:30  INFO 21212 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T10:12:12.690+05:30  INFO 21212 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T10:12:12.757+05:30  INFO 21212 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T10:12:12.792+05:30 ERROR 21212 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T10:12:12.888+05:30  INFO 21212 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T10:12:12.892+05:30 ERROR 21212 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T10:12:12.937+05:30  INFO 21212 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T10:12:12.938+05:30 ERROR 21212 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T10:12:12.945+05:30  INFO 21212 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T10:12:12.946+05:30 ERROR 21212 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T10:12:12.970+05:30  INFO 21212 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T10:12:13.053+05:30  INFO 21212 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T10:12:13.087+05:30  INFO 21212 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T10:12:13.093+05:30  INFO 21212 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T10:12:13.111+05:30  INFO 21212 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T10:12:13.121+05:30  INFO 21212 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T10:12:13.128+05:30  INFO 21212 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T10:12:13.137+05:30  INFO 21212 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T10:12:13.145+05:30  INFO 21212 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T10:12:13.158+05:30  INFO 21212 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T10:12:13.186+05:30  INFO 21212 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T10:12:13.190+05:30  INFO 21212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T10:12:13.195+05:30  INFO 21212 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T10:27:25.488+05:30  INFO 3036 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 3036 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T10:27:25.491+05:30  INFO 3036 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T10:27:26.706+05:30  INFO 3036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T10:27:26.782+05:30  INFO 3036 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
-2024-01-11T10:27:27.353+05:30  INFO 3036 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T10:27:27.464+05:30  INFO 3036 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T10:27:27.551+05:30  INFO 3036 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T10:27:28.047+05:30  INFO 3036 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T10:27:28.106+05:30  INFO 3036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T10:27:28.449+05:30  INFO 3036 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T10:27:28.453+05:30  INFO 3036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T10:27:28.497+05:30  WARN 3036 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T10:27:29.600+05:30  INFO 3036 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T10:27:29.663+05:30  INFO 3036 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T10:27:30.719+05:30  WARN 3036 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T10:27:30.786+05:30  INFO 3036 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T10:27:30.902+05:30  INFO 3036 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 5.826 seconds (process running for 7.611)
-2024-01-11T10:27:31.986+05:30  INFO 3036 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T10:27:32.481+05:30  INFO 3036 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T10:27:32.512+05:30  INFO 3036 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T10:27:32.524+05:30 ERROR 3036 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T10:27:32.532+05:30  INFO 3036 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T10:27:32.550+05:30 ERROR 3036 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T10:27:32.596+05:30  INFO 3036 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T10:27:32.600+05:30 ERROR 3036 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T10:27:32.607+05:30  INFO 3036 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T10:27:32.608+05:30 ERROR 3036 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T10:27:32.630+05:30  INFO 3036 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T10:27:32.685+05:30  INFO 3036 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T10:27:32.698+05:30  INFO 3036 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T10:27:32.715+05:30  INFO 3036 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T10:27:32.721+05:30  INFO 3036 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T10:27:32.726+05:30  INFO 3036 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T10:27:32.733+05:30  INFO 3036 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T10:27:32.740+05:30  INFO 3036 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T10:27:32.746+05:30  INFO 3036 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T10:27:32.756+05:30  INFO 3036 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T10:27:32.770+05:30  INFO 3036 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T10:27:32.776+05:30  INFO 3036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T10:27:32.795+05:30  INFO 3036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T10:51:06.804+05:30  INFO 7988 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 7988 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T10:51:06.813+05:30  INFO 7988 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T10:51:08.573+05:30  INFO 7988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T10:51:08.693+05:30  INFO 7988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 1 JPA repository interface.
-2024-01-11T10:51:09.540+05:30  INFO 7988 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T10:51:09.748+05:30  INFO 7988 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T10:51:09.885+05:30  INFO 7988 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T10:51:10.682+05:30  INFO 7988 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T10:51:10.784+05:30  INFO 7988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T10:51:11.489+05:30  INFO 7988 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T10:51:11.495+05:30  INFO 7988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T10:51:11.579+05:30  WARN 7988 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T10:51:13.835+05:30  INFO 7988 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T10:51:13.949+05:30  INFO 7988 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T10:51:15.239+05:30  WARN 7988 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T10:51:15.303+05:30  INFO 7988 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T10:51:15.432+05:30  INFO 7988 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 9.33 seconds (process running for 12.393)
-2024-01-11T10:51:16.660+05:30  INFO 7988 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T10:51:17.336+05:30  INFO 7988 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T10:51:17.471+05:30  INFO 7988 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T10:51:17.493+05:30 ERROR 7988 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T10:51:17.501+05:30  INFO 7988 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T10:51:17.503+05:30 ERROR 7988 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T10:51:17.512+05:30  INFO 7988 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T10:51:17.514+05:30 ERROR 7988 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T10:51:17.526+05:30  INFO 7988 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T10:51:17.528+05:30 ERROR 7988 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T10:51:17.549+05:30  INFO 7988 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T10:51:17.692+05:30  INFO 7988 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T10:51:17.721+05:30  INFO 7988 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T10:51:17.728+05:30  INFO 7988 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T10:51:17.735+05:30  INFO 7988 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T10:51:17.741+05:30  INFO 7988 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T10:51:17.751+05:30  INFO 7988 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T10:51:17.779+05:30  INFO 7988 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T10:51:17.793+05:30  INFO 7988 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T10:51:17.800+05:30  INFO 7988 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T10:51:19.053+05:30  INFO 7988 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T10:51:19.059+05:30  INFO 7988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T10:51:19.077+05:30  INFO 7988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T10:57:36.287+05:30  INFO 22088 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 22088 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T10:57:36.291+05:30  INFO 22088 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T10:57:37.355+05:30  INFO 22088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T10:57:37.440+05:30  INFO 22088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interface.
-2024-01-11T10:57:38.026+05:30  INFO 22088 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T10:57:38.145+05:30  INFO 22088 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T10:57:38.207+05:30  INFO 22088 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T10:57:38.646+05:30  INFO 22088 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T10:57:38.692+05:30  INFO 22088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T10:57:38.999+05:30  INFO 22088 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T10:57:39.003+05:30  INFO 22088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T10:57:39.044+05:30  WARN 22088 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T10:57:40.198+05:30  INFO 22088 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T10:57:40.262+05:30  INFO 22088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T10:57:41.248+05:30  WARN 22088 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T10:57:41.333+05:30  INFO 22088 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T10:57:41.450+05:30  INFO 22088 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 5.578 seconds (process running for 7.506)
-2024-01-11T10:57:42.907+05:30  INFO 22088 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T10:57:43.186+05:30  INFO 22088 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T10:57:43.237+05:30  INFO 22088 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T10:57:43.247+05:30  INFO 22088 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T10:57:43.254+05:30  INFO 22088 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T10:57:43.261+05:30  INFO 22088 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T10:57:43.270+05:30  INFO 22088 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T10:57:43.277+05:30  INFO 22088 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T10:57:43.284+05:30  INFO 22088 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T10:57:43.291+05:30  INFO 22088 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T10:57:43.296+05:30  INFO 22088 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T10:57:43.540+05:30  INFO 22088 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T10:57:43.560+05:30  INFO 22088 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T10:57:43.570+05:30 ERROR 22088 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T10:57:43.576+05:30  INFO 22088 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T10:57:43.577+05:30 ERROR 22088 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T10:57:43.585+05:30  INFO 22088 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T10:57:43.587+05:30 ERROR 22088 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T10:57:43.600+05:30  INFO 22088 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T10:57:43.602+05:30 ERROR 22088 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T10:57:43.631+05:30  INFO 22088 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T10:57:43.636+05:30  INFO 22088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T10:57:43.652+05:30  INFO 22088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T10:58:41.384+05:30  INFO 21740 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 21740 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T10:58:41.390+05:30  INFO 21740 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T10:58:43.060+05:30  INFO 21740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T10:58:43.176+05:30  INFO 21740 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
-2024-01-11T10:58:43.983+05:30  INFO 21740 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T10:58:44.134+05:30  INFO 21740 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T10:58:44.240+05:30  INFO 21740 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T10:58:45.194+05:30  INFO 21740 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T10:58:45.282+05:30  INFO 21740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T10:58:45.991+05:30  INFO 21740 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T10:58:45.996+05:30  INFO 21740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T10:58:46.069+05:30  WARN 21740 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T10:58:48.065+05:30  INFO 21740 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T10:58:48.198+05:30  INFO 21740 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T10:58:49.705+05:30  WARN 21740 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T10:58:49.784+05:30  INFO 21740 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T10:58:49.910+05:30  INFO 21740 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 9.265 seconds (process running for 12.188)
-2024-01-11T10:58:51.335+05:30  INFO 21740 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T10:58:51.862+05:30  INFO 21740 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T10:58:51.971+05:30  INFO 21740 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T10:58:51.985+05:30  INFO 21740 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T10:58:51.993+05:30  INFO 21740 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T10:58:52.030+05:30  INFO 21740 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T10:58:52.058+05:30  INFO 21740 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T10:58:52.067+05:30  INFO 21740 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T10:58:52.084+05:30  INFO 21740 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T10:58:52.114+05:30  INFO 21740 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T10:58:52.133+05:30  INFO 21740 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T10:58:52.486+05:30  INFO 21740 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T10:58:52.496+05:30  INFO 21740 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T10:58:52.508+05:30 ERROR 21740 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T10:58:52.525+05:30  INFO 21740 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T10:58:52.527+05:30 ERROR 21740 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T10:58:52.533+05:30  INFO 21740 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T10:58:52.535+05:30 ERROR 21740 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T10:58:52.542+05:30  INFO 21740 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T10:58:52.543+05:30 ERROR 21740 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T10:58:53.818+05:30  INFO 21740 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T10:58:53.826+05:30  INFO 21740 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T10:58:53.881+05:30  INFO 21740 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T11:00:03.141+05:30  INFO 21784 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 21784 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T11:00:03.143+05:30  INFO 21784 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T11:00:05.257+05:30  INFO 21784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T11:00:05.392+05:30  INFO 21784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 1 JPA repository interface.
-2024-01-11T11:00:06.342+05:30  INFO 21784 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T11:00:06.523+05:30  INFO 21784 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T11:00:06.633+05:30  INFO 21784 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T11:00:07.389+05:30  INFO 21784 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T11:00:07.466+05:30  INFO 21784 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T11:00:08.193+05:30  INFO 21784 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T11:00:08.199+05:30  INFO 21784 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T11:00:08.325+05:30  WARN 21784 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T11:00:10.293+05:30  INFO 21784 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T11:00:10.414+05:30  INFO 21784 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T11:00:11.699+05:30  WARN 21784 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T11:00:11.768+05:30  INFO 21784 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T11:00:11.888+05:30  INFO 21784 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 9.697 seconds (process running for 12.605)
-2024-01-11T11:00:13.060+05:30  INFO 21784 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:00:13.557+05:30  INFO 21784 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T11:00:13.654+05:30  INFO 21784 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T11:00:13.686+05:30  INFO 21784 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T11:00:13.711+05:30  INFO 21784 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T11:00:13.750+05:30  INFO 21784 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T11:00:13.765+05:30  INFO 21784 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T11:00:13.774+05:30  INFO 21784 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T11:00:13.796+05:30  INFO 21784 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T11:00:13.804+05:30  INFO 21784 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T11:00:13.818+05:30  INFO 21784 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:00:14.228+05:30  INFO 21784 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T11:00:14.241+05:30  INFO 21784 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T11:00:14.250+05:30 ERROR 21784 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T11:00:14.284+05:30  INFO 21784 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T11:00:14.285+05:30 ERROR 21784 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T11:00:14.292+05:30  INFO 21784 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T11:00:14.293+05:30 ERROR 21784 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T11:00:14.300+05:30  INFO 21784 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T11:00:14.302+05:30 ERROR 21784 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T11:00:14.346+05:30  INFO 21784 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T11:00:14.353+05:30  INFO 21784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T11:00:14.367+05:30  INFO 21784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T11:28:41.997+05:30  INFO 7576 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 7576 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T11:28:41.999+05:30  INFO 7576 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T11:28:43.625+05:30  INFO 7576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T11:28:43.791+05:30  INFO 7576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 145 ms. Found 1 JPA repository interface.
-2024-01-11T11:28:44.655+05:30  INFO 7576 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T11:28:44.826+05:30  INFO 7576 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T11:28:44.949+05:30  INFO 7576 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T11:28:45.676+05:30  INFO 7576 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T11:28:45.773+05:30  INFO 7576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T11:28:46.420+05:30  INFO 7576 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T11:28:46.427+05:30  INFO 7576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T11:28:46.501+05:30  WARN 7576 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T11:28:48.434+05:30  INFO 7576 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T11:28:48.553+05:30  INFO 7576 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T11:28:49.919+05:30  WARN 7576 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T11:28:49.987+05:30  INFO 7576 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T11:28:50.118+05:30  INFO 7576 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 8.865 seconds (process running for 11.865)
-2024-01-11T11:28:51.298+05:30  INFO 7576 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:28:51.856+05:30  INFO 7576 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T11:28:51.955+05:30  INFO 7576 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T11:28:51.970+05:30  INFO 7576 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T11:28:51.991+05:30  INFO 7576 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T11:28:52.002+05:30  INFO 7576 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T11:28:52.010+05:30  INFO 7576 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T11:28:52.018+05:30  INFO 7576 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T11:28:52.038+05:30  INFO 7576 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T11:28:52.064+05:30  INFO 7576 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T11:28:52.083+05:30  INFO 7576 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:28:52.472+05:30  INFO 7576 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T11:28:52.499+05:30  INFO 7576 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T11:28:52.518+05:30 ERROR 7576 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T11:28:52.527+05:30  INFO 7576 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T11:28:52.528+05:30 ERROR 7576 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T11:28:52.534+05:30  INFO 7576 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T11:28:52.537+05:30 ERROR 7576 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T11:28:52.545+05:30  INFO 7576 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T11:28:52.546+05:30 ERROR 7576 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T11:28:52.581+05:30  INFO 7576 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T11:28:52.586+05:30  INFO 7576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T11:28:52.612+05:30  INFO 7576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T11:35:50.568+05:30  INFO 17552 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 17552 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T11:35:50.571+05:30  INFO 17552 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T11:35:52.375+05:30  INFO 17552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T11:35:52.491+05:30  INFO 17552 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 1 JPA repository interface.
-2024-01-11T11:35:53.313+05:30  INFO 17552 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T11:35:53.467+05:30  INFO 17552 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T11:35:53.578+05:30  INFO 17552 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T11:35:54.297+05:30  INFO 17552 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T11:35:54.381+05:30  INFO 17552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T11:35:55.032+05:30  INFO 17552 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T11:35:55.037+05:30  INFO 17552 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T11:35:55.112+05:30  WARN 17552 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T11:35:57.011+05:30  INFO 17552 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T11:35:57.124+05:30  INFO 17552 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T11:35:58.492+05:30  WARN 17552 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T11:35:58.580+05:30  INFO 17552 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T11:35:58.696+05:30  INFO 17552 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 8.868 seconds (process running for 11.817)
-2024-01-11T11:35:59.800+05:30  INFO 17552 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.AirportApiApplicationTests]: AirportApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:35:59.804+05:30  INFO 17552 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.Airport.AirportApiApplication for test class com.Airport.AirportApiApplicationTests
-2024-01-11T11:35:59.829+05:30  INFO 17552 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:36:00.444+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T11:36:00.546+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T11:36:00.573+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T11:36:00.606+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T11:36:00.623+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T11:36:00.632+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T11:36:00.749+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T11:36:00.769+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T11:36:00.776+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T11:36:00.782+05:30  INFO 17552 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:36:01.151+05:30  INFO 17552 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T11:36:01.162+05:30  INFO 17552 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T11:36:01.182+05:30 ERROR 17552 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T11:36:01.200+05:30  INFO 17552 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T11:36:01.202+05:30 ERROR 17552 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T11:36:01.223+05:30  INFO 17552 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T11:36:01.224+05:30 ERROR 17552 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T11:36:01.232+05:30  INFO 17552 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T11:36:01.235+05:30 ERROR 17552 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T11:36:01.257+05:30  INFO 17552 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:36:01.263+05:30  INFO 17552 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T11:36:01.270+05:30  INFO 17552 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T11:36:01.274+05:30 ERROR 17552 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T11:36:01.289+05:30  INFO 17552 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T11:36:01.290+05:30 ERROR 17552 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T11:36:01.302+05:30  INFO 17552 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T11:36:01.304+05:30 ERROR 17552 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T11:36:01.316+05:30  INFO 17552 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T11:36:01.317+05:30 ERROR 17552 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T11:36:01.334+05:30  INFO 17552 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:36:01.352+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T11:36:01.373+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T11:36:01.391+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T11:36:01.405+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T11:36:01.423+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T11:36:01.434+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T11:36:01.442+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T11:36:01.450+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T11:36:01.462+05:30  INFO 17552 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T11:36:01.502+05:30  INFO 17552 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T11:36:01.511+05:30  INFO 17552 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T11:36:01.524+05:30  INFO 17552 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T11:37:55.623+05:30  INFO 21868 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 21868 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T11:37:55.632+05:30  INFO 21868 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T11:37:57.187+05:30  INFO 21868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T11:37:57.298+05:30  INFO 21868 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 1 JPA repository interface.
-2024-01-11T11:37:58.109+05:30  INFO 21868 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T11:37:58.269+05:30  INFO 21868 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T11:37:58.359+05:30  INFO 21868 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T11:37:59.065+05:30  INFO 21868 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T11:37:59.144+05:30  INFO 21868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T11:37:59.796+05:30  INFO 21868 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T11:37:59.802+05:30  INFO 21868 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T11:37:59.875+05:30  WARN 21868 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T11:38:01.876+05:30  INFO 21868 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T11:38:02.020+05:30  INFO 21868 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T11:38:03.366+05:30  WARN 21868 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T11:38:03.460+05:30  INFO 21868 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T11:38:03.597+05:30  INFO 21868 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 8.718 seconds (process running for 11.704)
-2024-01-11T11:38:04.777+05:30  INFO 21868 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.AirportApiApplicationTests]: AirportApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:38:04.784+05:30  INFO 21868 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.Airport.AirportApiApplication for test class com.Airport.AirportApiApplicationTests
-2024-01-11T11:38:04.807+05:30  INFO 21868 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:38:05.346+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T11:38:05.436+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T11:38:05.464+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T11:38:05.473+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T11:38:05.487+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T11:38:05.519+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T11:38:05.528+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T11:38:05.539+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T11:38:05.551+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T11:38:05.559+05:30  INFO 21868 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:38:05.943+05:30  INFO 21868 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T11:38:05.967+05:30  INFO 21868 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T11:38:05.986+05:30 ERROR 21868 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T11:38:05.993+05:30  INFO 21868 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T11:38:05.994+05:30 ERROR 21868 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T11:38:06.002+05:30  INFO 21868 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T11:38:06.004+05:30 ERROR 21868 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T11:38:06.010+05:30  INFO 21868 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T11:38:06.012+05:30 ERROR 21868 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T11:38:06.051+05:30  INFO 21868 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:38:06.058+05:30  INFO 21868 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T11:38:06.065+05:30  INFO 21868 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T11:38:06.066+05:30 ERROR 21868 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T11:38:06.074+05:30  INFO 21868 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T11:38:06.087+05:30 ERROR 21868 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T11:38:06.098+05:30  INFO 21868 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T11:38:06.099+05:30 ERROR 21868 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T11:38:06.107+05:30  INFO 21868 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T11:38:06.110+05:30 ERROR 21868 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T11:38:06.121+05:30  INFO 21868 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:38:06.127+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T11:38:06.134+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T11:38:06.139+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T11:38:06.145+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T11:38:06.151+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T11:38:06.157+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T11:38:06.170+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T11:38:06.207+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T11:38:06.223+05:30  INFO 21868 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T11:38:07.780+05:30  INFO 21868 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T11:38:07.785+05:30  INFO 21868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T11:38:07.800+05:30  INFO 21868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T11:38:54.751+05:30  INFO 9460 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 9460 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T11:38:54.754+05:30  INFO 9460 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T11:38:55.758+05:30  INFO 9460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T11:38:55.860+05:30  INFO 9460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interface.
-2024-01-11T11:38:56.452+05:30  INFO 9460 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T11:38:56.553+05:30  INFO 9460 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T11:38:56.622+05:30  INFO 9460 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T11:38:57.058+05:30  INFO 9460 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T11:38:57.101+05:30  INFO 9460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T11:38:57.386+05:30  INFO 9460 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T11:38:57.390+05:30  INFO 9460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T11:38:57.427+05:30  WARN 9460 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T11:38:58.557+05:30  INFO 9460 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T11:38:58.624+05:30  INFO 9460 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T11:38:59.599+05:30  WARN 9460 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T11:38:59.653+05:30  INFO 9460 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T11:38:59.757+05:30  INFO 9460 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 5.392 seconds (process running for 7.32)
-2024-01-11T11:39:00.753+05:30  INFO 9460 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:39:01.031+05:30  INFO 9460 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T11:39:01.080+05:30  INFO 9460 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T11:39:01.088+05:30  INFO 9460 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T11:39:01.094+05:30  INFO 9460 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T11:39:01.100+05:30  INFO 9460 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T11:39:01.128+05:30  INFO 9460 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T11:39:01.151+05:30  INFO 9460 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T11:39:01.159+05:30  INFO 9460 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T11:39:01.165+05:30  INFO 9460 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T11:39:01.171+05:30  INFO 9460 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T11:39:01.380+05:30  INFO 9460 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T11:39:01.398+05:30  INFO 9460 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T11:39:01.408+05:30 ERROR 9460 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T11:39:01.414+05:30  INFO 9460 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T11:39:01.415+05:30 ERROR 9460 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T11:39:01.421+05:30  INFO 9460 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T11:39:01.422+05:30 ERROR 9460 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T11:39:01.427+05:30  INFO 9460 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T11:39:01.428+05:30 ERROR 9460 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T11:39:01.459+05:30  INFO 9460 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T11:39:01.462+05:30  INFO 9460 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T11:39:01.471+05:30  INFO 9460 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T12:11:57.024+05:30  INFO 9576 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 9576 (C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI\target\classes started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T12:11:57.028+05:30  INFO 9576 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T12:11:57.179+05:30  INFO 9576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-01-11T12:11:57.179+05:30  INFO 9576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-01-11T12:11:58.305+05:30  INFO 9576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T12:11:58.393+05:30  INFO 9576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interface.
-2024-01-11T12:11:59.587+05:30  INFO 9576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 11478 (http)
-2024-01-11T12:11:59.615+05:30  INFO 9576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-01-11T12:11:59.615+05:30  INFO 9576 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
-2024-01-11T12:11:59.757+05:30  INFO 9576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-01-11T12:11:59.758+05:30  INFO 9576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2578 ms
-2024-01-11T12:11:59.829+05:30  INFO 9576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T12:12:00.417+05:30  INFO 9576 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T12:12:00.421+05:30  INFO 9576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T12:12:00.437+05:30  INFO 9576 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T12:12:00.702+05:30  INFO 9576 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T12:12:00.824+05:30  INFO 9576 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T12:12:00.893+05:30  INFO 9576 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T12:12:01.263+05:30  INFO 9576 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T12:12:01.342+05:30  WARN 9576 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T12:12:02.295+05:30  INFO 9576 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T12:12:02.353+05:30  INFO 9576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T12:12:03.202+05:30  WARN 9576 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T12:12:03.333+05:30  INFO 9576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-01-11T12:12:03.429+05:30  INFO 9576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11478 (http) with context path ''
-2024-01-11T12:12:03.441+05:30  INFO 9576 --- [restartedMain] com.Airport.AirportApiApplication        : Started AirportApiApplication in 7.014 seconds (process running for 7.762)
-2024-01-11T12:12:42.770+05:30  INFO 9576 --- [http-nio-11478-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-11T12:12:42.770+05:30  INFO 9576 --- [http-nio-11478-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-01-11T12:12:42.772+05:30  INFO 9576 --- [http-nio-11478-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-01-11T12:12:42.776+05:30  INFO 9576 --- [http-nio-11478-exec-1] com.Airport.Filter.AirportFilter         : localport11478
-2024-01-11T12:12:42.814+05:30  INFO 9576 --- [http-nio-11478-exec-1] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/api/v1/airports
-2024-01-11T12:12:42.826+05:30  INFO 9576 --- [http-nio-11478-exec-1] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T12:12:42.826+05:30  INFO 9576 --- [http-nio-11478-exec-1] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T12:12:43.192+05:30  INFO 9576 --- [http-nio-11478-exec-1] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/api/v1/airports
-2024-01-11T12:12:43.193+05:30  INFO 9576 --- [http-nio-11478-exec-1] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/api/v1/airports
-2024-01-11T12:19:52.282+05:30  INFO 22304 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 22304 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T12:19:52.285+05:30  INFO 22304 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T12:19:53.375+05:30  INFO 22304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T12:19:53.467+05:30  INFO 22304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interface.
-2024-01-11T12:19:54.128+05:30  INFO 22304 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T12:19:54.259+05:30  INFO 22304 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T12:19:54.327+05:30  INFO 22304 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T12:19:54.850+05:30  INFO 22304 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T12:19:54.897+05:30  INFO 22304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T12:19:55.294+05:30  INFO 22304 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T12:19:55.297+05:30  INFO 22304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T12:19:55.341+05:30  WARN 22304 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T12:19:56.633+05:30  INFO 22304 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T12:19:56.701+05:30  INFO 22304 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T12:19:57.700+05:30  WARN 22304 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T12:19:57.756+05:30  INFO 22304 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T12:19:57.873+05:30  INFO 22304 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 6.038 seconds (process running for 7.936)
-2024-01-11T12:19:59.462+05:30  INFO 22304 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T12:19:59.777+05:30  INFO 22304 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T12:19:59.826+05:30  INFO 22304 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T12:19:59.834+05:30  INFO 22304 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T12:19:59.842+05:30  INFO 22304 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T12:19:59.884+05:30  INFO 22304 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T12:19:59.892+05:30  INFO 22304 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T12:19:59.898+05:30  INFO 22304 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T12:19:59.906+05:30  INFO 22304 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T12:19:59.913+05:30  INFO 22304 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T12:19:59.967+05:30  INFO 22304 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T12:20:00.242+05:30  INFO 22304 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T12:20:00.252+05:30  INFO 22304 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T12:20:00.268+05:30 ERROR 22304 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T12:20:00.282+05:30  INFO 22304 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T12:20:00.283+05:30 ERROR 22304 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T12:20:00.297+05:30  INFO 22304 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T12:20:00.301+05:30 ERROR 22304 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T12:20:00.313+05:30  INFO 22304 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T12:20:00.314+05:30 ERROR 22304 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T12:20:00.343+05:30  INFO 22304 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T12:20:00.347+05:30  INFO 22304 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T12:20:00.358+05:30  INFO 22304 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T14:22:58.417+05:30  INFO 9964 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 9964 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T14:22:58.424+05:30  INFO 9964 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T14:23:00.299+05:30  INFO 9964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T14:23:00.434+05:30  INFO 9964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 1 JPA repository interface.
-2024-01-11T14:23:01.347+05:30  INFO 9964 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T14:23:01.546+05:30  INFO 9964 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T14:23:01.662+05:30  INFO 9964 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T14:23:02.451+05:30  INFO 9964 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T14:23:02.537+05:30  INFO 9964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T14:23:03.382+05:30  INFO 9964 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T14:23:03.386+05:30  INFO 9964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T14:23:03.459+05:30  WARN 9964 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T14:23:05.309+05:30  INFO 9964 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T14:23:05.415+05:30  INFO 9964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T14:23:06.832+05:30  WARN 9964 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T14:23:06.904+05:30  INFO 9964 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T14:23:07.043+05:30  INFO 9964 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 9.37 seconds (process running for 12.611)
-2024-01-11T14:23:08.959+05:30  INFO 9964 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T14:23:09.055+05:30  INFO 9964 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T14:23:09.095+05:30  INFO 9964 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T14:23:09.105+05:30  INFO 9964 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T14:23:09.113+05:30  INFO 9964 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T14:23:09.121+05:30  INFO 9964 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T14:23:09.130+05:30  INFO 9964 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T14:23:09.136+05:30  INFO 9964 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T14:23:09.157+05:30  INFO 9964 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T14:23:09.462+05:30  INFO 9964 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T14:23:09.469+05:30  INFO 9964 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T14:23:09.479+05:30 ERROR 9964 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T14:23:09.484+05:30  INFO 9964 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T14:23:09.486+05:30 ERROR 9964 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T14:23:09.490+05:30  INFO 9964 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T14:23:09.493+05:30 ERROR 9964 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T14:23:09.553+05:30  INFO 9964 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T14:23:09.554+05:30 ERROR 9964 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T14:23:11.140+05:30  INFO 9964 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T14:23:11.146+05:30  INFO 9964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T14:23:11.154+05:30  INFO 9964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T14:27:14.739+05:30  INFO 18164 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 18164 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T14:27:14.745+05:30  INFO 18164 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T14:27:16.680+05:30  INFO 18164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T14:27:16.844+05:30  INFO 18164 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 1 JPA repository interface.
-2024-01-11T14:27:17.821+05:30  INFO 18164 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T14:27:17.994+05:30  INFO 18164 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T14:27:18.095+05:30  INFO 18164 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T14:27:18.926+05:30  INFO 18164 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T14:27:19.021+05:30  INFO 18164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T14:27:19.712+05:30  INFO 18164 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T14:27:19.716+05:30  INFO 18164 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T14:27:19.804+05:30  WARN 18164 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T14:27:21.929+05:30  INFO 18164 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T14:27:22.057+05:30  INFO 18164 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T14:27:23.528+05:30  WARN 18164 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T14:27:23.601+05:30  INFO 18164 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T14:27:23.720+05:30  INFO 18164 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 9.721 seconds (process running for 12.939)
-2024-01-11T14:27:25.520+05:30  INFO 18164 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T14:27:25.604+05:30  INFO 18164 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T14:27:25.613+05:30  INFO 18164 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T14:27:25.629+05:30  INFO 18164 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T14:27:25.637+05:30  INFO 18164 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T14:27:25.645+05:30  INFO 18164 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T14:27:25.650+05:30  INFO 18164 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T14:27:25.656+05:30  INFO 18164 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T14:27:25.665+05:30  INFO 18164 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T14:27:26.130+05:30  INFO 18164 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T14:27:26.171+05:30 ERROR 18164 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T14:27:26.236+05:30  INFO 18164 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T14:27:26.242+05:30  INFO 18164 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T14:27:26.244+05:30 ERROR 18164 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T14:27:26.251+05:30  INFO 18164 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T14:27:26.253+05:30 ERROR 18164 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T14:27:26.258+05:30  INFO 18164 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T14:27:26.260+05:30 ERROR 18164 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T14:27:27.789+05:30  INFO 18164 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T14:27:27.795+05:30  INFO 18164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T14:27:27.811+05:30  INFO 18164 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T14:29:01.737+05:30  INFO 18904 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 18904 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T14:29:01.740+05:30  INFO 18904 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T14:29:03.844+05:30  INFO 18904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T14:29:03.967+05:30  INFO 18904 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
-2024-01-11T14:29:04.866+05:30  INFO 18904 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T14:29:05.044+05:30  INFO 18904 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T14:29:05.144+05:30  INFO 18904 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T14:29:05.909+05:30  INFO 18904 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T14:29:05.994+05:30  INFO 18904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T14:29:06.691+05:30  INFO 18904 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T14:29:06.697+05:30  INFO 18904 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T14:29:06.802+05:30  WARN 18904 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T14:29:08.864+05:30  INFO 18904 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T14:29:08.979+05:30  INFO 18904 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T14:29:10.407+05:30  WARN 18904 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T14:29:10.482+05:30  INFO 18904 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T14:29:10.608+05:30  INFO 18904 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 9.695 seconds (process running for 12.86)
-2024-01-11T14:29:12.252+05:30  INFO 18904 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T14:29:12.405+05:30  INFO 18904 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T14:29:12.414+05:30  INFO 18904 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T14:29:12.425+05:30  INFO 18904 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T14:29:12.431+05:30  INFO 18904 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T14:29:12.436+05:30  INFO 18904 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T14:29:12.443+05:30  INFO 18904 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T14:29:12.449+05:30  INFO 18904 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T14:29:12.454+05:30  INFO 18904 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T14:29:12.474+05:30  INFO 18904 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T14:29:12.822+05:30  INFO 18904 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T14:29:12.830+05:30  INFO 18904 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T14:29:12.845+05:30 ERROR 18904 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T14:29:12.851+05:30  INFO 18904 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T14:29:12.853+05:30 ERROR 18904 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T14:29:12.859+05:30  INFO 18904 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T14:29:12.870+05:30 ERROR 18904 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T14:29:12.891+05:30  INFO 18904 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T14:29:12.904+05:30 ERROR 18904 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T14:29:14.093+05:30  INFO 18904 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T14:29:14.102+05:30  INFO 18904 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T14:29:14.114+05:30  INFO 18904 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T14:43:30.120+05:30  INFO 20576 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 20576 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T14:43:30.127+05:30  INFO 20576 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T14:43:32.335+05:30  INFO 20576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T14:43:32.530+05:30  INFO 20576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 163 ms. Found 1 JPA repository interface.
-2024-01-11T14:43:33.636+05:30  INFO 20576 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T14:43:33.862+05:30  INFO 20576 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T14:43:34.002+05:30  INFO 20576 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T14:43:34.998+05:30  INFO 20576 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T14:43:35.104+05:30  INFO 20576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T14:43:35.951+05:30  INFO 20576 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T14:43:35.957+05:30  INFO 20576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T14:43:36.058+05:30  WARN 20576 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T14:43:38.214+05:30  INFO 20576 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T14:43:38.355+05:30  INFO 20576 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T14:43:40.016+05:30  WARN 20576 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T14:43:40.114+05:30  INFO 20576 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T14:43:40.296+05:30  INFO 20576 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 11.105 seconds (process running for 15.134)
-2024-01-11T14:43:42.029+05:30  INFO 20576 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T14:43:42.720+05:30  INFO 20576 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T14:43:42.852+05:30  INFO 20576 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T14:43:42.870+05:30  INFO 20576 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T14:43:42.880+05:30  INFO 20576 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T14:43:42.890+05:30  INFO 20576 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T14:43:42.918+05:30  INFO 20576 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T14:43:42.929+05:30  INFO 20576 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T14:43:42.938+05:30  INFO 20576 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T14:43:42.949+05:30  INFO 20576 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T14:43:42.986+05:30  INFO 20576 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T14:43:43.544+05:30  INFO 20576 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T14:43:43.557+05:30  INFO 20576 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T14:43:43.579+05:30 ERROR 20576 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T14:43:43.604+05:30  INFO 20576 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T14:43:43.606+05:30 ERROR 20576 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T14:43:43.614+05:30  INFO 20576 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T14:43:43.616+05:30 ERROR 20576 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T14:43:43.626+05:30  INFO 20576 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T14:43:43.627+05:30 ERROR 20576 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T14:43:43.713+05:30  INFO 20576 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T14:43:43.718+05:30  INFO 20576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T14:43:43.775+05:30  INFO 20576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T15:53:02.231+05:30  INFO 21056 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 21056 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T15:53:02.236+05:30  INFO 21056 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T15:53:03.301+05:30  INFO 21056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T15:53:03.401+05:30  INFO 21056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 1 JPA repository interface.
-2024-01-11T15:53:03.962+05:30  INFO 21056 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T15:53:04.110+05:30  INFO 21056 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T15:53:04.175+05:30  INFO 21056 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T15:53:04.610+05:30  INFO 21056 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T15:53:04.657+05:30  INFO 21056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T15:53:04.986+05:30  INFO 21056 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T15:53:04.989+05:30  INFO 21056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T15:53:05.023+05:30  WARN 21056 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T15:53:06.095+05:30  INFO 21056 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T15:53:06.153+05:30  INFO 21056 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T15:53:07.191+05:30  WARN 21056 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T15:53:07.249+05:30  INFO 21056 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T15:53:07.337+05:30  INFO 21056 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 5.494 seconds (process running for 7.287)
-2024-01-11T15:53:08.523+05:30  INFO 21056 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.AirportApiApplicationTests]: AirportApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T15:53:08.527+05:30  INFO 21056 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.Airport.AirportApiApplication for test class com.Airport.AirportApiApplicationTests
-2024-01-11T15:53:08.562+05:30  INFO 21056 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T15:53:08.898+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T15:53:08.949+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T15:53:08.958+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T15:53:08.965+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T15:53:08.971+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T15:53:08.978+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T15:53:09.041+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T15:53:09.052+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T15:53:09.060+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T15:53:09.163+05:30  INFO 21056 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T15:53:09.194+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T15:53:09.206+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T15:53:09.212+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T15:53:09.223+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T15:53:09.246+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T15:53:09.287+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T15:53:09.305+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T15:53:09.315+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T15:53:09.325+05:30  INFO 21056 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T15:53:09.342+05:30  INFO 21056 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T15:53:09.346+05:30  INFO 21056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T15:53:09.353+05:30  INFO 21056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-01-11T15:55:58.668+05:30  INFO 8044 --- [main] com.Airport.AirportApiApplicationTests   : Starting AirportApiApplicationTests using Java 17.0.9 with PID 8044 (started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
-2024-01-11T15:55:58.672+05:30  INFO 8044 --- [main] com.Airport.AirportApiApplicationTests   : No active profile set, falling back to 1 default profile: "default"
-2024-01-11T15:55:59.668+05:30  INFO 8044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11T15:55:59.763+05:30  INFO 8044 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interface.
-2024-01-11T15:56:00.438+05:30  INFO 8044 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11T15:56:00.528+05:30  INFO 8044 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-11T15:56:00.590+05:30  INFO 8044 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-11T15:56:01.040+05:30  INFO 8044 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11T15:56:01.090+05:30  INFO 8044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-11T15:56:01.444+05:30  INFO 8044 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
-2024-01-11T15:56:01.448+05:30  INFO 8044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-11T15:56:01.496+05:30  WARN 8044 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-01-11T15:56:02.621+05:30  INFO 8044 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11T15:56:02.681+05:30  INFO 8044 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T15:56:03.666+05:30  WARN 8044 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11T15:56:03.733+05:30  INFO 8044 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
-2024-01-11T15:56:03.849+05:30  INFO 8044 --- [main] com.Airport.AirportApiApplicationTests   : Started AirportApiApplicationTests in 5.688 seconds (process running for 7.432)
-2024-01-11T15:56:05.002+05:30  INFO 8044 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.AirportApiApplicationTests]: AirportApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T15:56:05.006+05:30  INFO 8044 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.Airport.AirportApiApplication for test class com.Airport.AirportApiApplicationTests
-2024-01-11T15:56:05.030+05:30  INFO 8044 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T15:56:05.339+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T15:56:05.391+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T15:56:05.410+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T15:56:05.417+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T15:56:05.438+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T15:56:05.445+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T15:56:05.452+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T15:56:05.459+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T15:56:05.466+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T15:56:05.480+05:30  INFO 8044 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T15:56:05.653+05:30  INFO 8044 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T15:56:05.671+05:30  INFO 8044 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T15:56:05.684+05:30 ERROR 8044 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T15:56:05.689+05:30  INFO 8044 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T15:56:05.695+05:30  INFO 8044 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T15:56:05.704+05:30 ERROR 8044 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T15:56:05.715+05:30 ERROR 8044 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T15:56:05.720+05:30  INFO 8044 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T15:56:05.727+05:30 ERROR 8044 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T15:56:05.743+05:30  INFO 8044 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.service.AirportServiceTest]: AirportServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T15:56:05.754+05:30  INFO 8044 --- [main] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
-2024-01-11T15:56:05.759+05:30  INFO 8044 --- [main] c.A.S.AirportServiceImplementation       : Creating airport...
-2024-01-11T15:56:05.764+05:30 ERROR 8044 --- [main] c.A.S.AirportServiceImplementation       : Airport is already Exists
-2024-01-11T15:56:05.770+05:30  INFO 8044 --- [main] c.A.S.AirportServiceImplementation       : Fetching specific airport from the repository.
-2024-01-11T15:56:05.775+05:30  INFO 8044 --- [main] c.A.S.AirportServiceImplementation       : Deleting specific airport from the repository.
-2024-01-11T15:56:05.779+05:30 ERROR 8044 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T15:56:05.784+05:30 ERROR 8044 --- [main] c.A.S.AirportServiceImplementation       : Airport with IATA code does not exist
-2024-01-11T15:56:05.808+05:30  INFO 8044 --- [main] c.A.S.AirportServiceImplementation       : Updating specific airport from the repository.
-2024-01-11T15:56:05.812+05:30 ERROR 8044 --- [main] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: MYQ
-2024-01-11T15:56:05.822+05:30  INFO 8044 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.Airport.controller.AirportControllerTest]: AirportControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-01-11T15:56:05.826+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T15:56:05.831+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : Fetching specific airport details.
-2024-01-11T15:56:05.834+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T15:56:05.843+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T15:56:05.852+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : creating all airport details.
-2024-01-11T15:56:05.861+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T15:56:05.872+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : Fetching all airport details.
-2024-01-11T15:56:05.876+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : updating specific airport details.
-2024-01-11T15:56:05.880+05:30  INFO 8044 --- [main] c.Airport.Controller.AirportController   : deleting specific airport details.
-2024-01-11T15:56:05.899+05:30  INFO 8044 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11T15:56:05.903+05:30  INFO 8044 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-01-11T15:56:05.916+05:30  INFO 8044 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-12T15:59:13.020+05:30  INFO 15188 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 15188 (C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI\target\classes started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
+2024-01-12T15:59:13.033+05:30  INFO 15188 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-01-12T15:59:13.204+05:30  INFO 15188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-12T15:59:13.208+05:30  INFO 15188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-12T15:59:14.634+05:30  INFO 15188 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-12T15:59:14.836+05:30  INFO 15188 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146 ms. Found 1 JPA repository interface.
+2024-01-12T15:59:15.908+05:30  INFO 15188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 11478 (http)
+2024-01-12T15:59:15.929+05:30  INFO 15188 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-12T15:59:15.930+05:30  INFO 15188 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-12T15:59:16.073+05:30  INFO 15188 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-12T15:59:16.074+05:30  INFO 15188 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2864 ms
+2024-01-12T15:59:16.152+05:30  INFO 15188 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-12T15:59:16.524+05:30  INFO 15188 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-12T15:59:16.527+05:30  INFO 15188 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-12T15:59:16.545+05:30  INFO 15188 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-12T15:59:16.801+05:30  INFO 15188 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-12T15:59:16.898+05:30  INFO 15188 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-12T15:59:16.973+05:30  INFO 15188 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-12T15:59:17.401+05:30  INFO 15188 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-12T15:59:17.479+05:30  WARN 15188 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-12T15:59:18.655+05:30  INFO 15188 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-12T15:59:18.720+05:30  INFO 15188 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-12T15:59:20.095+05:30  WARN 15188 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-12T15:59:20.353+05:30  INFO 15188 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-12T15:59:20.473+05:30  INFO 15188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11478 (http) with context path ''
+2024-01-12T15:59:20.510+05:30  INFO 15188 --- [restartedMain] com.Airport.AirportApiApplication        : Started AirportApiApplication in 8.082 seconds (process running for 9.0)
+2024-01-12T15:59:45.682+05:30  INFO 24984 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 24984 (C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI\target\classes started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
+2024-01-12T15:59:45.686+05:30  INFO 24984 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-01-12T15:59:45.841+05:30  INFO 24984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-12T15:59:45.842+05:30  INFO 24984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-12T15:59:47.122+05:30  INFO 24984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-12T15:59:47.214+05:30  INFO 24984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+2024-01-12T15:59:48.305+05:30  INFO 24984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 11478 (http)
+2024-01-12T15:59:48.323+05:30  INFO 24984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-12T15:59:48.324+05:30  INFO 24984 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-12T15:59:48.480+05:30  INFO 24984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-12T15:59:48.482+05:30  INFO 24984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2639 ms
+2024-01-12T15:59:48.535+05:30  INFO 24984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-12T15:59:48.900+05:30  INFO 24984 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-12T15:59:48.904+05:30  INFO 24984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-12T15:59:48.925+05:30  INFO 24984 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-12T15:59:49.153+05:30  INFO 24984 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-12T15:59:49.259+05:30  INFO 24984 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-12T15:59:49.326+05:30  INFO 24984 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-12T15:59:49.704+05:30  INFO 24984 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-12T15:59:49.776+05:30  WARN 24984 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-12T15:59:50.942+05:30  INFO 24984 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-12T15:59:51.015+05:30  INFO 24984 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-12T15:59:52.010+05:30  WARN 24984 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-12T15:59:52.350+05:30  INFO 24984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-12T15:59:52.432+05:30  INFO 24984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11478 (http) with context path ''
+2024-01-12T15:59:52.444+05:30  INFO 24984 --- [restartedMain] com.Airport.AirportApiApplication        : Started AirportApiApplication in 7.333 seconds (process running for 8.107)
+2024-01-12T15:59:57.570+05:30  INFO 24984 --- [http-nio-11478-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-12T15:59:57.570+05:30  INFO 24984 --- [http-nio-11478-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-12T15:59:57.582+05:30  INFO 24984 --- [http-nio-11478-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2024-01-12T15:59:57.587+05:30  INFO 24984 --- [http-nio-11478-exec-1] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T15:59:57.600+05:30  WARN 24984 --- [http-nio-11478-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /airports
+2024-01-12T15:59:57.608+05:30  WARN 24984 --- [http-nio-11478-exec-1] o.s.web.servlet.PageNotFound             : No endpoint GET /airports.
+2024-01-12T15:59:57.628+05:30  INFO 24984 --- [http-nio-11478-exec-1] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/error
+2024-01-12T15:59:57.711+05:30  INFO 24984 --- [http-nio-11478-exec-1] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/error
+2024-01-12T15:59:57.711+05:30  INFO 24984 --- [http-nio-11478-exec-1] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/error
+2024-01-12T16:00:13.129+05:30  INFO 24984 --- [http-nio-11478-exec-6] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:00:13.130+05:30  INFO 24984 --- [http-nio-11478-exec-6] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/api/v1/airport/HYD
+2024-01-12T16:00:13.138+05:30  INFO 24984 --- [http-nio-11478-exec-6] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-12T16:00:13.221+05:30 ERROR 24984 --- [http-nio-11478-exec-6] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: HYD
+2024-01-12T16:00:13.225+05:30  INFO 24984 --- [http-nio-11478-exec-6] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/api/v1/airport/HYD
+2024-01-12T16:00:13.226+05:30  INFO 24984 --- [http-nio-11478-exec-6] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/api/v1/airport/HYD
+2024-01-12T16:00:17.710+05:30  INFO 24984 --- [http-nio-11478-exec-5] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:00:17.711+05:30  WARN 24984 --- [http-nio-11478-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /airports
+2024-01-12T16:00:17.712+05:30  WARN 24984 --- [http-nio-11478-exec-5] o.s.web.servlet.PageNotFound             : No endpoint GET /airports.
+2024-01-12T16:00:17.712+05:30  INFO 24984 --- [http-nio-11478-exec-5] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/error
+2024-01-12T16:00:17.714+05:30  INFO 24984 --- [http-nio-11478-exec-5] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/error
+2024-01-12T16:00:17.716+05:30  INFO 24984 --- [http-nio-11478-exec-5] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/error
+2024-01-12T16:01:04.787+05:30  INFO 24984 --- [http-nio-11478-exec-4] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:01:04.788+05:30  WARN 24984 --- [http-nio-11478-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /airports
+2024-01-12T16:01:04.789+05:30  WARN 24984 --- [http-nio-11478-exec-4] o.s.web.servlet.PageNotFound             : No endpoint GET /airports.
+2024-01-12T16:01:04.791+05:30  INFO 24984 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/error
+2024-01-12T16:01:04.792+05:30  INFO 24984 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/error
+2024-01-12T16:01:04.793+05:30  INFO 24984 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/error
+2024-01-12T16:02:14.317+05:30  INFO 24984 --- [http-nio-11478-exec-2] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:02:14.318+05:30  INFO 24984 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/api/v1/airport/HYD
+2024-01-12T16:02:14.319+05:30  INFO 24984 --- [http-nio-11478-exec-2] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-12T16:02:14.321+05:30 ERROR 24984 --- [http-nio-11478-exec-2] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: HYD
+2024-01-12T16:02:14.322+05:30  INFO 24984 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/api/v1/airport/HYD
+2024-01-12T16:02:14.322+05:30  INFO 24984 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/api/v1/airport/HYD
+2024-01-12T16:02:47.722+05:30  INFO 24984 --- [http-nio-11478-exec-9] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:02:47.723+05:30  INFO 24984 --- [http-nio-11478-exec-9] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/api/v1/airport/VSKP
+2024-01-12T16:02:47.723+05:30  INFO 24984 --- [http-nio-11478-exec-9] c.Airport.Controller.AirportController   : Fetching specific airport details.
+2024-01-12T16:02:47.725+05:30 ERROR 24984 --- [http-nio-11478-exec-9] c.A.S.AirportServiceImplementation       : Requested airport does not exist for IATACODE: VSKP
+2024-01-12T16:02:47.726+05:30  INFO 24984 --- [http-nio-11478-exec-9] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/api/v1/airport/VSKP
+2024-01-12T16:02:47.727+05:30  INFO 24984 --- [http-nio-11478-exec-9] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/api/v1/airport/VSKP
+2024-01-12T16:03:15.496+05:30  INFO 23912 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 23912 (C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI\target\classes started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
+2024-01-12T16:03:15.502+05:30  INFO 23912 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-01-12T16:03:15.648+05:30  INFO 23912 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-12T16:03:15.648+05:30  INFO 23912 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-12T16:03:16.801+05:30  INFO 23912 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-12T16:03:16.893+05:30  INFO 23912 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 JPA repository interface.
+2024-01-12T16:03:17.895+05:30  INFO 23912 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 11478 (http)
+2024-01-12T16:03:17.911+05:30  INFO 23912 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-12T16:03:17.912+05:30  INFO 23912 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-12T16:03:18.036+05:30  INFO 23912 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-12T16:03:18.038+05:30  INFO 23912 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2388 ms
+2024-01-12T16:03:18.087+05:30  INFO 23912 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-12T16:03:18.438+05:30  INFO 23912 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-12T16:03:18.444+05:30  INFO 23912 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-12T16:03:18.462+05:30  INFO 23912 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-12T16:03:18.757+05:30  INFO 23912 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-12T16:03:18.858+05:30  INFO 23912 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-12T16:03:18.926+05:30  INFO 23912 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-12T16:03:19.279+05:30  INFO 23912 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-12T16:03:19.355+05:30  WARN 23912 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-12T16:03:20.423+05:30  INFO 23912 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-12T16:03:20.489+05:30  INFO 23912 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-12T16:03:21.430+05:30  WARN 23912 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-12T16:03:21.573+05:30  INFO 23912 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-12T16:03:21.643+05:30  INFO 23912 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11478 (http) with context path ''
+2024-01-12T16:03:21.655+05:30  INFO 23912 --- [restartedMain] com.Airport.AirportApiApplication        : Started AirportApiApplication in 6.719 seconds (process running for 7.59)
+2024-01-12T16:03:30.107+05:30  INFO 23912 --- [http-nio-11478-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-12T16:03:30.108+05:30  INFO 23912 --- [http-nio-11478-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-12T16:03:30.109+05:30  INFO 23912 --- [http-nio-11478-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-12T16:03:30.113+05:30  INFO 23912 --- [http-nio-11478-exec-2] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:03:30.129+05:30  WARN 23912 --- [http-nio-11478-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /airports
+2024-01-12T16:03:30.138+05:30  WARN 23912 --- [http-nio-11478-exec-2] o.s.web.servlet.PageNotFound             : No endpoint GET /airports.
+2024-01-12T16:03:30.165+05:30  INFO 23912 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/error
+2024-01-12T16:03:30.243+05:30  INFO 23912 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/error
+2024-01-12T16:03:30.243+05:30  INFO 23912 --- [http-nio-11478-exec-2] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/error
+2024-01-12T16:03:31.519+05:30  INFO 23912 --- [http-nio-11478-exec-3] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:03:31.520+05:30  WARN 23912 --- [http-nio-11478-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /airports
+2024-01-12T16:03:31.520+05:30  WARN 23912 --- [http-nio-11478-exec-3] o.s.web.servlet.PageNotFound             : No endpoint GET /airports.
+2024-01-12T16:03:31.522+05:30  INFO 23912 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/error
+2024-01-12T16:03:31.525+05:30  INFO 23912 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/error
+2024-01-12T16:03:31.526+05:30  INFO 23912 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/error
+2024-01-12T16:03:47.021+05:30  INFO 23912 --- [http-nio-11478-exec-4] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:03:47.022+05:30  INFO 23912 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. POST:/api/v1/airports
+2024-01-12T16:03:47.079+05:30  INFO 23912 --- [http-nio-11478-exec-4] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-12T16:03:47.582+05:30 ERROR 23912 --- [http-nio-11478-exec-4] c.A.S.AirportServiceImplementation       : Airport is already Exists
+2024-01-12T16:03:47.586+05:30  INFO 23912 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. POST:/api/v1/airports
+2024-01-12T16:03:47.587+05:30  INFO 23912 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. POST:/api/v1/airports
+2024-01-12T16:03:55.401+05:30  INFO 23912 --- [http-nio-11478-exec-5] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:03:55.402+05:30  INFO 23912 --- [http-nio-11478-exec-5] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. POST:/api/v1/airports
+2024-01-12T16:03:55.403+05:30  INFO 23912 --- [http-nio-11478-exec-5] c.Airport.Controller.AirportController   : creating all airport details.
+2024-01-12T16:03:55.408+05:30  INFO 23912 --- [http-nio-11478-exec-5] c.A.S.AirportServiceImplementation       : Creating airport...
+2024-01-12T16:03:55.477+05:30  INFO 23912 --- [http-nio-11478-exec-5] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. POST:/api/v1/airports
+2024-01-12T16:03:55.478+05:30  INFO 23912 --- [http-nio-11478-exec-5] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. POST:/api/v1/airports
+2024-01-12T16:03:58.233+05:30  INFO 23912 --- [http-nio-11478-exec-6] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:03:58.233+05:30  WARN 23912 --- [http-nio-11478-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /airports
+2024-01-12T16:03:58.234+05:30  WARN 23912 --- [http-nio-11478-exec-6] o.s.web.servlet.PageNotFound             : No endpoint GET /airports.
+2024-01-12T16:03:58.235+05:30  INFO 23912 --- [http-nio-11478-exec-6] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/error
+2024-01-12T16:03:58.236+05:30  INFO 23912 --- [http-nio-11478-exec-6] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/error
+2024-01-12T16:03:58.237+05:30  INFO 23912 --- [http-nio-11478-exec-6] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/error
+2024-01-12T16:04:00.114+05:30  INFO 23912 --- [http-nio-11478-exec-7] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:04:00.115+05:30  WARN 23912 --- [http-nio-11478-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /airports/
+2024-01-12T16:04:00.115+05:30  WARN 23912 --- [http-nio-11478-exec-7] o.s.web.servlet.PageNotFound             : No endpoint GET /airports/.
+2024-01-12T16:04:00.116+05:30  INFO 23912 --- [http-nio-11478-exec-7] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/error
+2024-01-12T16:04:00.118+05:30  INFO 23912 --- [http-nio-11478-exec-7] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/error
+2024-01-12T16:04:00.120+05:30  INFO 23912 --- [http-nio-11478-exec-7] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/error
+2024-01-12T16:04:22.335+05:30  INFO 23912 --- [http-nio-11478-exec-8] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:04:22.336+05:30  INFO 23912 --- [http-nio-11478-exec-8] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/api/v1/airports
+2024-01-12T16:04:22.337+05:30  INFO 23912 --- [http-nio-11478-exec-8] c.Airport.Controller.AirportController   : Fetching all airport details.
+2024-01-12T16:04:22.337+05:30  INFO 23912 --- [http-nio-11478-exec-8] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
+2024-01-12T16:04:22.377+05:30  INFO 23912 --- [http-nio-11478-exec-8] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/api/v1/airports
+2024-01-12T16:04:22.378+05:30  INFO 23912 --- [http-nio-11478-exec-8] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/api/v1/airports
+2024-01-12T16:14:42.867+05:30  INFO 23912 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-01-12T16:14:42.919+05:30  INFO 23912 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-12T16:14:42.923+05:30  INFO 23912 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-12T16:14:43.311+05:30  INFO 23912 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-12T16:14:43.448+05:30  INFO 23912 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 23912 (C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI\target\classes started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
+2024-01-12T16:14:43.451+05:30  INFO 23912 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-01-12T16:14:43.916+05:30  INFO 23912 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-12T16:14:43.938+05:30  INFO 23912 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2024-01-12T16:14:44.109+05:30  INFO 23912 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 11478 (http)
+2024-01-12T16:14:44.122+05:30  INFO 23912 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-12T16:14:44.123+05:30  INFO 23912 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-12T16:14:44.199+05:30  INFO 23912 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-12T16:14:44.199+05:30  INFO 23912 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 745 ms
+2024-01-12T16:14:44.219+05:30  INFO 23912 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-01-12T16:14:44.268+05:30  INFO 23912 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:file:./abhi user=ABHISHEK
+2024-01-12T16:14:44.269+05:30  INFO 23912 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-01-12T16:14:44.270+05:30  INFO 23912 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./abhi'
+2024-01-12T16:14:44.322+05:30  INFO 23912 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-12T16:14:44.326+05:30  INFO 23912 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-12T16:14:44.331+05:30  INFO 23912 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-12T16:14:44.335+05:30  WARN 23912 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-12T16:14:44.377+05:30  INFO 23912 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-12T16:14:44.385+05:30  INFO 23912 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-12T16:14:44.811+05:30  WARN 23912 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-12T16:14:44.867+05:30  INFO 23912 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-01-12T16:14:44.883+05:30  INFO 23912 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 11478 (http) with context path ''
+2024-01-12T16:14:44.889+05:30  INFO 23912 --- [restartedMain] com.Airport.AirportApiApplication        : Started AirportApiApplication in 1.494 seconds (process running for 690.817)
+2024-01-12T16:14:44.893+05:30  INFO 23912 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-12T16:14:56.654+05:30  INFO 23912 --- [http-nio-11478-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-12T16:14:56.654+05:30  INFO 23912 --- [http-nio-11478-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-01-12T16:14:56.656+05:30  INFO 23912 --- [http-nio-11478-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-01-12T16:14:56.657+05:30  INFO 23912 --- [http-nio-11478-exec-1] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:14:56.658+05:30  INFO 23912 --- [http-nio-11478-exec-1] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/api/v1/airports
+2024-01-12T16:14:56.659+05:30  INFO 23912 --- [http-nio-11478-exec-1] c.Airport.Controller.AirportController   : Fetching all airport details.
+2024-01-12T16:14:56.659+05:30  INFO 23912 --- [http-nio-11478-exec-1] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
+2024-01-12T16:14:56.669+05:30  INFO 23912 --- [http-nio-11478-exec-1] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/api/v1/airports
+2024-01-12T16:14:56.670+05:30  INFO 23912 --- [http-nio-11478-exec-1] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/api/v1/airports
+2024-01-12T16:14:57.677+05:30  INFO 23912 --- [http-nio-11478-exec-3] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:14:57.677+05:30  INFO 23912 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/api/v1/airports
+2024-01-12T16:14:57.677+05:30  INFO 23912 --- [http-nio-11478-exec-3] c.Airport.Controller.AirportController   : Fetching all airport details.
+2024-01-12T16:14:57.677+05:30  INFO 23912 --- [http-nio-11478-exec-3] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
+2024-01-12T16:14:57.683+05:30  INFO 23912 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/api/v1/airports
+2024-01-12T16:14:57.684+05:30  INFO 23912 --- [http-nio-11478-exec-3] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/api/v1/airports
+2024-01-12T16:14:58.564+05:30  INFO 23912 --- [http-nio-11478-exec-4] com.Airport.Filter.AirportFilter         : localport11478
+2024-01-12T16:14:58.565+05:30  INFO 23912 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : preHandle method invoked .. GET:/api/v1/airports
+2024-01-12T16:14:58.565+05:30  INFO 23912 --- [http-nio-11478-exec-4] c.Airport.Controller.AirportController   : Fetching all airport details.
+2024-01-12T16:14:58.565+05:30  INFO 23912 --- [http-nio-11478-exec-4] c.A.S.AirportServiceImplementation       : Fetching all airports from the repository.
+2024-01-12T16:14:58.569+05:30  INFO 23912 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : posthandle method invoked .. GET:/api/v1/airports
+2024-01-12T16:14:58.569+05:30  INFO 23912 --- [http-nio-11478-exec-4] c.A.Interceptor.AirportInterceptor       : afterCompletion method invoked .. GET:/api/v1/airports
+2024-01-12T16:16:05.540+05:30  INFO 23912 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-01-12T16:16:05.579+05:30  INFO 23912 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-12T16:16:05.580+05:30  INFO 23912 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-01-12T16:16:05.886+05:30  INFO 23912 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-01-12T16:16:06.088+05:30  INFO 23912 --- [restartedMain] com.Airport.AirportApiApplication        : Starting AirportApiApplication using Java 17.0.9 with PID 23912 (C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI\target\classes started by abhishek_pola in C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\airportAPI)
+2024-01-12T16:16:06.091+05:30  INFO 23912 --- [restartedMain] com.Airport.AirportApiApplication        : No active profile set, falling back to 1 default profile: "default"

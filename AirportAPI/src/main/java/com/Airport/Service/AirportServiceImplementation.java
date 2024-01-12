@@ -66,7 +66,7 @@ public class AirportServiceImplementation implements AirportService{
 	@Override
 	public Airport updateAirport(String IATACode, Airport updatedAirport) {
 	    Optional <Airport> optionalExistingAirport = airportRepository.findById(IATACode);
-
+ 
 	    if (optionalExistingAirport.isPresent()) {
 	    	  log.info("Updating specific airport from the repository.");
 	        Airport existingAirport = optionalExistingAirport.get();
