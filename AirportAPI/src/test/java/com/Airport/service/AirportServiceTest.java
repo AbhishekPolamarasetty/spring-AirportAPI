@@ -1,10 +1,10 @@
 package com.Airport.service;
  
-import static org.junit.Assert.assertThrows;
-//import static org.junit.jupiter.api.Assertions.assertThrows;
+//import static org.junit.Assert.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+//import static org.mockito.Mockito.times;
+//import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
  
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
+//import org.mockito.Mockito;
 //import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 //import org.springframework.test.context.junit.jupiter.SpringExtension;
@@ -42,12 +42,14 @@ public class AirportServiceTest {
 	private Airport airport;
 	private Airport updatedairport;
 	private Airport existingAirport;
+	private String data;
  
 	@BeforeEach
 	public void setup() {
 		existingIATACODE = "VSKP";
 		nonExistingIATACODE = "MYQ";
 		IATACODE = "BLR";
+		data = "Airport deleted successfully";
 		airport = new Airport("BLR", "bengaluru airport", "Bengaluru");
 		updatedairport = new Airport("BLR", "bengaluru International airport", "smvt bengaluru");
 		existingAirport = new Airport("BLR", "bengaluru airport", "bengaluru");
@@ -101,7 +103,7 @@ public class AirportServiceTest {
  
 		when(airportRepository.existsById(IATACODE)).thenReturn(true);
  
-		assertEquals("Airport deleted successfully", airportServiceImplementation.deleteAirport(IATACODE));
+		assertEquals(data, airportServiceImplementation.deleteAirport(IATACODE));
 
 	}
  
