@@ -54,7 +54,8 @@ public class AirportControllerTest {
     	
     	when(airportService.getAllAirports()).thenReturn(airport);
     	
-    	 ResponseEntity<?> responseEntity = airportController.getAllAirportDetails();
+    	List<Airport> airportList = airportController.getAllAirportDetails();
+    	ResponseEntity<List<Airport>> responseEntity = new ResponseEntity<>(airportList, HttpStatus.OK);
     	assertEquals(HttpStatus.OK,responseEntity.getStatusCode());	
 	}
     

@@ -13,6 +13,7 @@ import java.util.Optional;
  
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -26,10 +27,17 @@ import com.Airport.Exception.AirportAlreadyExists;
 import com.Airport.Exception.AirportNotFoundException;
 import com.Airport.Repository.AirportRepository;
 import com.Airport.Service.AirportServiceImplementation;
- 
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @ExtendWith(MockitoExtension.class)
+@TestInstance(TestInstance.Lifecycle.PER_CLASS) //used only for heavy setup logic or the need for shared state between test methods
 public class AirportServiceTest {
- 
+    
+	AirportServiceTest(){
+		log.info("Constructor is called");
+	}
 	@Mock
 	private AirportRepository airportRepository;
  
@@ -53,6 +61,7 @@ public class AirportServiceTest {
 		airport = new Airport("BLR", "bengaluru airport", "Bengaluru");
 		updatedairport = new Airport("BLR", "bengaluru International airport", "smvt bengaluru");
 		existingAirport = new Airport("BLR", "bengaluru airport", "bengaluru");
+		log.info("BeforeEach annotation");
 	}
  
 	@Test
@@ -95,7 +104,12 @@ public class AirportServiceTest {
 	public void testcreateAirports_AlreadyExists() {
  
 		when(airportRepository.existsById(airport.getIATACODE())).thenReturn(true);
-		assertThrows(AirportAlreadyExists.class, () -> airportServiceImplementation.createAirport(airport));
+		assertThrows(AirportAlreadyExists.class, () -> airportServiceImplementation.createAirport(airport));	
+//		assertAll("Airport creation with existing code",
+//		        () -> assertTrue(airportRepository.existsById(airport.getIATACODE()), "Airport should exist"),
+//		        () -> assertThrows(AirportAlreadyExists.class, () -> airportServiceImplementation.createAirport(airport),
+//		                "Expected AirportAlreadyExists exception")
+//		    );
 	}
  
 	@Test

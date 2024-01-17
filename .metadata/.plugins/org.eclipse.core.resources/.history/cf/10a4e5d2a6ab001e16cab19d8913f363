@@ -1,5 +1,0 @@
-package com.books.Exception;
-
-public class BookException {
-	private final String message;
-}

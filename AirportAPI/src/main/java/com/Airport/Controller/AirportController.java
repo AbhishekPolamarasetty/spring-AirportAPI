@@ -1,6 +1,8 @@
 package com.Airport.Controller;
 
 
+import java.util.List;
+
 //import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -31,19 +33,20 @@ public class AirportController{
 	@Autowired
 	private AirportService airportService;
 	
-//	public List<Airport> getAllAirportDetails() {
-//		log.info("Fetching all airport details.");
-//		return airportService.getAllAirports();
-//	}
 	@GetMapping("/airports")
-	public ResponseEntity<?> getAllAirportDetails() {
-		log.info("Fetching all airport details.");
-		return ResponseEntity.ok(airportService.getAllAirports());
+	public List<Airport> getAllAirportDetails() {
+//		log.info("Fetching all airport details.");
+		return airportService.getAllAirports();
 	}
+//	@GetMapping("/airports")
+//	public ResponseEntity<?> getAllAirportDetails() {
+//		log.info("Fetching all airport details.");
+//		return ResponseEntity.ok(airportService.getAllAirports());
+//	}
 //	}
 	@PostMapping("/airports")
 	public ResponseEntity<?> createAirportDetails(@RequestBody Airport airport) {
-	    log.info("creating all airport details.");
+//	    log.info("creating all airport details.");
 	    try {
 	    	airportService.createAirport(airport);
 		    return ResponseEntity.status(HttpStatus.CREATED).body("Airport created successfully");
@@ -57,7 +60,7 @@ public class AirportController{
 	
 	@GetMapping("airport/{IATACODE}")
 	public ResponseEntity<?> getAirportDetails(@PathVariable("IATACODE") String IATACODE ) {
-		log.info("Fetching specific airport details.");
+//		log.info("Fetching specific airport details.");
 		try {
 			return ResponseEntity.ok(airportService.getAirport(IATACODE));
 		}
@@ -69,7 +72,7 @@ public class AirportController{
 
 	@PutMapping("airport/{IATACODE}")
 	public ResponseEntity <?> updateAirportDetails(@PathVariable ("IATACODE") String IATACODE, @RequestBody Airport airport) {
-		log.info("updating specific airport details.");
+//		log.info("updating specific airport details.");
 		try {
 			return ResponseEntity.ok(airportService.updateAirport(IATACODE,airport));
 		}
@@ -81,7 +84,7 @@ public class AirportController{
 	
 	@DeleteMapping("airport/{IATACODE}")
 	public ResponseEntity<?> deleteAirportDetails(@PathVariable("IATACODE") String IATACODE) {
-		log.info("deleting specific airport details.");
+//		log.info("deleting specific airport details.");
 		try {
 			return ResponseEntity.ok(airportService.deleteAirport(IATACODE));
 		}
