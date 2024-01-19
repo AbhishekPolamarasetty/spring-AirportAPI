@@ -34,9 +34,9 @@ public class ServiceLoggingAspect {
 		log.info("Executing createAirport method in the Service and creating airport.");
 	}
 	
-	@AfterThrowing("execution(public * com.Airport.Service.AirportServiceImplementation.createAirport(..)) && args(airport)")
-	public void logCreatingAirportsException(Airport airport) {
-		 log.error("Airport with IATACODE already Exists");
+	@AfterThrowing(value = "execution(public * com.Airport.Service.AirportServiceImplementation.createAirport(..)) && args(airport)",throwing = "e")
+	public void logCreatingAirportsException(Airport airport,Exception e) {
+		 log.error("Airport with IATACODE already Exists " + e.getClass());
 	}
 	
 	@Before("execution(public * com.Airport.Service.AirportServiceImplementation.updateAirport(..)) && args(IATACODE,updatedAirport)")

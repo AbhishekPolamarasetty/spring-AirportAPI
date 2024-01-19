@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
-    <fullyQualifiedTypeName name="org.apache.el.stream.Optional"/>
-    <fullyQualifiedTypeName name="java.util.Optional"/>
-    <fullyQualifiedTypeName name="com.abhi.Airport.Exception.AirportNotFoundException"/>
     <fullyQualifiedTypeName name="Airport.Exception.AirportAlreadyExists"/>
     <fullyQualifiedTypeName name="Airport.Exception.AirportNotFoundException"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
@@ -20,7 +12,6 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.HandlerInterceptor"/>
     <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.InterceptorRegistry"/>
     <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport"/>
@@ -38,7 +29,6 @@
     <fullyQualifiedTypeName name="com.Airport.Repository.AirportRepository"/>
     <fullyQualifiedTypeName name="com.Airport.Service.AirportService"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="com.Airport.Entity.Airport"/>
     <fullyQualifiedTypeName name="org.junit.Test"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
     <fullyQualifiedTypeName name="com.Airport.Service.AirportServiceImplementation"/>
@@ -57,7 +47,17 @@
     <fullyQualifiedTypeName name="org.junit.jupiter.api.TestInstance.Lifecycle"/>
     <fullyQualifiedTypeName name="com.Airport.Exception.AirportNotFoundException"/>
     <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
-    <fullyQualifiedTypeName name="lombok.extern.slf4j.Slf4j"/>
     <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
+    <fullyQualifiedTypeName name="com.Airport.Entity.Airport"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.AfterReturning"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.AfterThrowing"/>
+    <fullyQualifiedTypeName name="lombok.extern.slf4j.Slf4j"/>
+    <fullyQualifiedTypeName name="com.Airport.Interceptor.BasicAuthInterceptor"/>
+    <fullyQualifiedTypeName name="io.micrometer.common.util.StringUtils"/>
+    <fullyQualifiedTypeName name="org.springframework.util.StringUtils"/>
+    <fullyQualifiedTypeName name="java.util.Base64"/>
+    <fullyQualifiedTypeName name="java.nio.charset.StandardCharsets"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 </qualifiedTypeNameHistroy>

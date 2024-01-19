@@ -1,0 +1,98 @@
+swagger: "2.0"
+info:
+  title: Airport
+  version: v0
+basePath: /api/v1  # Base path for all API endpoints
+produces:
+  - application/json  # Response content type
+consumes:
+  - application/json  # Request content type
+paths:
+  /airport/{IATACODE}:
+    get:
+      tags:
+        - airport-controller
+      operationId: getAirportDetails
+      parameters:
+        - name: IATACODE
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+    put:
+      tags:
+        - airport-controller
+      operationId: updateAirportDetails
+      parameters:
+        - name: "IATACODE"
+          in: "path"
+          required: true
+          type: "string"
+        - name: "Airport"
+          in: "body"
+          required: true
+          schema:
+            $ref: "#/definitions/Airport"
+      responses:
+        200:
+          description: "Airport updated successfully"
+    delete:
+      tags:
+        - airport-controller
+      operationId: deleteAirportDetails
+      parameters:
+        - name: IATACODE
+          in: path
+          required: true
+          type: string
+      responses:
+        '200':
+          description: OK
+          schema:
+            type: object
+  /airport:
+    post:
+      tags:
+        - airport-controller
+      operationId: createAirportDetails
+      parameters:
+        - name: "Airport"
+          in: "body"
+          required: true
+          schema:
+            $ref: "#/definitions/Airport"
+      responses:
+        201:
+          description: "Airport created successfully"
+    get:
+      tags:
+        - airport-controller
+      operationId: getAllAirportDetails
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            type: "object"
+            properties:
+              airports:
+                type: "array"
+                items:
+                  $ref: "#/definitions/Airport"
+
+definitions:
+  Airport:
+    type: "object"
+    properties:
+      IATA_code:
+        type: "string"
+        description: "IATA code of the airport"
+      airport_name:
+        type: "string"
+        description: "Name of the airport"
+      city_name:
+        type: "string"
+        description: "Name of the city where the airport is located"
