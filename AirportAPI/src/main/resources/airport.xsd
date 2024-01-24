@@ -1,0 +1,91 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://entities.Airport.com"
+targetNamespace="http://entities.Airport.com" elementFormDefault="qualified">
+
+
+<xs:complexType name= "Airport">
+    <xs:sequence>
+        <xs:element name="IATACODE" type="xs:string"/>
+        <xs:element name="airportname" type="xs:string"/>
+        <xs:element name="cityname" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="serviceStatus">
+    <xs:sequence>
+        <xs:element name="status" type="xs:string"/>
+        <xs:element name="message" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:element name="createAirportDetailsRequest">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="Airport" type="tns:Airport" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="createAirportDetailsResponse">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="message" type = "xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="gellAllAirportDetailsResponse">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="Airport" type="tns:Airport" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="getAirportDetailsRequest">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="IATACODE" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="getAirportDetailsResponse">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="Airport" type="tns:Airport" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="updateAirportDetailsRequest">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="IATACODE" type="xs:string"></xs:element>
+            <xs:element name="Airport" type="tns:Airport"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="updateAirportDetailsResponse">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="message" type="xs:string"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="deleteAirportDetailsRequest">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="IATACODE" type="xs:string"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:element name="deleteAirportDetailsResponse">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="message" type="xs:string"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
