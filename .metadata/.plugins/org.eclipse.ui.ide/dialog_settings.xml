@@ -39,6 +39,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\abhishek_pola\Desktop\chat-APP"/>
 			<item value="C:\Users\abhishek_pola\Downloads\11484-Ranjitha Rudrappa"/>
 			<item value="C:\Users\abhishek_pola\Desktop\SpringAirport"/>
 			<item value="C:\Users\abhishek_pola\Documents\workspace-spring-tool-suite-4-4.21.0.RELEASE\spring-RESTAPI"/>
